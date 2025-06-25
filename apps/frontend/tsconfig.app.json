@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    //
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es2017",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "skipLibCheck": true
+    // ...
+  }
+}
