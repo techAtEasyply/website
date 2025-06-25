@@ -1,4 +1,4 @@
-name: 🚀 Deploy to GCP VM
+name: Deploy to GCP VM
 
 on:
   push:
@@ -7,36 +7,23 @@ on:
 
 jobs:
   deploy:
-    name: Deploy on GCP VM
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Setup SSH
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.VM_SSH_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H ${{ secrets.VM_HOST }} >> ~/.ssh/known_hosts
-
-      - name: Pull and Deploy Code
-        run: |
-          ssh -i ~/.ssh/id_ed25519 ${{ secrets.VM_USER }}@${{ secrets.VM_HOST }} << 'EOF'
-            cd easyply
-
-            # Pull latest changes
+      - name: SSH and deploy
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.VM_HOST }}
+          username: ${{ secrets.VM_USER }}
+          key: ${{ secrets.VM_SSH_KEY }}
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          script: |
+            cd website
             git pull origin main
-
-            cd apps/backend
-
-            # Install dependencies
             npm install
-
-            cd dist
-
-            # Restart app with PM2
-            pm2 restart easyplybackend || pm2 start index.js --name easyplybackend
-
-          EOF
+            cd apps/backend
+            npm run build
+            pm2 restart easyplybackend || pm2 start dist/index.js --name easyplybackend
