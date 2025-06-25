@@ -13,6 +13,4 @@ async function scrape() {
   console.log(data)
 }
 
-scrape()
-
 app.listen(3000)
