@@ -3,7 +3,7 @@ name: 🚀 Deploy to GCP VM
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   deploy:
@@ -24,17 +24,19 @@ jobs:
       - name: Pull and Deploy Code
         run: |
           ssh -i ~/.ssh/id_ed25519 ${{ secrets.VM_USER }}@${{ secrets.VM_HOST }} << 'EOF'
-            cd ${{ secrets.APP_DIR }}
+            cd easyply
 
             # Pull latest changes
             git pull origin main
 
+            cd apps/backend
+
             # Install dependencies
             npm install
 
-            # Restart app with PM2
-            pm2 restart all || pm2 start app.js --name my-app
+            cd dist
 
-            # Reload nginx if needed
-            sudo systemctl reload nginx
+            # Restart app with PM2
+            pm2 restart easyplybackend || pm2 start index.js --name easyplybackend
+
           EOF
