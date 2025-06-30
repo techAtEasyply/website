@@ -1,11 +1,10 @@
 import { useResumeStore } from "@/store/useResumeStore";
 import {
-  FONT_OPTIONS,
   ModernTemplate,
   MinimalistTemplate,
   ElegantTemplate,
   CreativeTemplate,
-} from "./resume-builder";
+} from "./templates";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 

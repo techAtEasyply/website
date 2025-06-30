@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import { useResumeStore } from "@/store/useResumeStore";
 import {
-  FONT_OPTIONS,
   ModernTemplate,
   MinimalistTemplate,
   ElegantTemplate,
   CreativeTemplate,
-} from "./resume-builder";
+} from "./templates";
 
 const TEMPLATES = [
   { label: "Modern", component: ModernTemplate },

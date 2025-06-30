@@ -1,0 +1,674 @@
+{
+    "title": "Workable",
+    "totalSize": 1991,
+    "nextPageToken": "eyJzZWFyY2hBdCI6IjIwMjUtMDYtMzBUMDc6MDA6MDAuMDAwWiIsIm9mZnNldCI6WzQ0LjY4MjA1NiwwLDE3NTA3MTYzOTQwMDAsIjhiZjFkYWYxLTViYmItNGE5NC04MDdkLWMwNTE4ZmQxZDE5YyJdfQ==",
+    "jobs": [
+      {
+        "department": "Technology",
+        "id": "72bb4b6f-5a61-453f-979b-f35c3adda6b6",
+        "title": "Fullstack Developer (Laravel + Vue/React)",
+        "state": "published",
+        "description": "\u003Cp\u003EAbout the Role\u003C/p\u003E\u003Cp\u003EAt Chapa, we’re not just building APIs — we’re creating tools that power real businesses and teams across Africa. From the merchant dashboard to internal control panels, we need a fullstack engineer who thrives in Laravel on the backend and enjoys crafting clean interfaces with Vue or React on the frontend.\u003C/p\u003E\u003Cp\u003E \u003C/p\u003E\u003Cp\u003EYou’ll work closely with product, support, compliance, and engineering teams to build features that improve business visibility, streamline support, and help our internal team move faster.\u003C/p\u003E\u003Cp\u003E What You’ll Do\u003C/p\u003E\u003Cp\u003E • Write backend logic using Laravel (queues, jobs, policies, events, notifications).\u003C/p\u003E\u003Cp\u003E • Build and maintain frontend components in Vue 3 or React for real-time, data-rich dashboards.\u003C/p\u003E\u003Cp\u003E • Implement permissions, roles, and multi-tenant logic for various users (merchants, agents, support).\u003C/p\u003E\u003Cp\u003E • Optimize UI/UX for speed, clarity, and simplicity — even under high transaction loads.\u003C/p\u003E\u003Cp\u003E • Collaborate across product, support, and design to continuously improve tools and workflows.\u003C/p\u003E\u003Cp\u003EWhat We’re Looking For\u003C/p\u003E\u003Cp\u003E • 2+ years of experience with Laravel (Eloquent, migrations, Horizon, API Resources).\u003C/p\u003E\u003Cp\u003E • Strong SQL knowledge (MySQL/PostgreSQL) and experience optimizing queries.\u003C/p\u003E\u003Cp\u003E • Solid understanding of frontend development with Vue.js (Composition API) or React.\u003C/p\u003E\u003Cp\u003E • Familiarity with Tailwind CSS, RESTful API design, and basic frontend state management.\u003C/p\u003E\u003Cp\u003E • Comfortable with Git, CI/CD, and environments like Forge, Vapor, or ECS.\u003C/p\u003E\u003Cp\u003E \u003C/p\u003E",
+        "socialSharingDescription": "About the RoleAt Chapa, we’re not just building APIs — we’re creating tools that power real businesses and teams across Africa. From the merchant dashboard to internal control panels, we need a fullstack engineer who thrives in Laravel on the backend a...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cul\u003E \u003Cli\u003EPension Plan\u003C/li\u003E \u003Cli\u003EPaid Time Off\u003C/li\u003E \u003Cli\u003ETraining &amp; Development\u003C/li\u003E \u003Cli\u003EPerformance Bonus\u003C/li\u003E \u003Cli\u003Efree lunch\u003C/li\u003E \u003C/ul\u003E",
+        "requirementsSection": "\u003Cp\u003EDashboard &amp; Experience\u003C/p\u003E\u003Cp\u003E • 2+ years of experience with Laravel (Eloquent, migrations, Horizon, API Resources).\u003C/p\u003E\u003Cp\u003E • Strong SQL knowledge (MySQL/PostgreSQL) and experience optimizing queries.\u003C/p\u003E\u003Cp\u003E • Solid understanding of frontend development with Vue.js (Composition API) or React.\u003C/p\u003E\u003Cp\u003E • Familiarity with Tailwind CSS, RESTful API design, and basic frontend state management.\u003C/p\u003E\u003Cp\u003E • Comfortable with Git, CI/CD, and environments like Forge, Vapor, or ECS.\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/faHCVGi2fkDvzrU1dbWuRu/fullstack-developer-(laravel-%2B-vue%2Freact)-in-addis-ababa-at-chapa",
+        "language": "en",
+        "locations": [
+          "Addis Ababa, Ādīs Ābeba, Ethiopia"
+        ],
+        "location": {
+          "city": "Addis Ababa",
+          "subregion": "Ādīs Ābeba",
+          "countryName": "Ethiopia"
+        },
+        "created": "2025-06-28T00:00:00.000Z",
+        "updated": "2025-06-28T00:00:00.000Z",
+        "company": {
+          "id": "78f0265f-e7ae-43c6-bf11-94b4a045c76f",
+          "title": "Chapa",
+          "website": "http://chapa.co",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/659718/logo",
+          "description": "\u003Cp\u003EChapa empowers emerging companies and developers with a range of services, including Payment Gateways, Payment Applications and Equipment, APIs, and more. We're here to assist you whenever you need smooth business transactions. Gain access to comprehensive financial data, secure payment methods, and Bill Aggregator Solutions through us.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/fWaNVRM4NtFcSPYsrepic6/jobs-at-chapa",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/659718/social",
+          "socialSharingDescription": "Chapa is dedicated to empowering emerging companies and developers by offering a wide array of services. These include payment gateways, payment applications and equipment, APIs, and more. The company aims to ensure that its clients have access to seamles"
+        },
+        "workplace": "on_site"
+      },
+      {
+        "department": "Technology",
+        "id": "38357275-f736-479d-ad27-f3420a26cb4b",
+        "title": "Frontend Developer (React)",
+        "state": "published",
+        "description": "\u003Cp\u003EAbout the Role\u003C/p\u003E\u003Cp\u003EAt Chapa, we’re building beautiful, fast, and accessible payment experiences for Africa and beyond. We’re looking for a React developer who thrives on turning designs into clean, functional UIs. If you care deeply about user experience, performance, and pixel-perfect execution — we’d love to hear from you.\u003C/p\u003E\u003Cp\u003E What You’ll Do\u003C/p\u003E\u003Cp\u003E • Build and ship React components for our merchant dashboard and internal tools.\u003C/p\u003E\u003Cp\u003E • Work closely with designers and backend engineers to deliver seamless flows.\u003C/p\u003E\u003Cp\u003E • Optimize frontend performance for reliability and speed — even on low-bandwidth connections.\u003C/p\u003E\u003Cp\u003E • Help shape the future of our design system and reusable UI components.\u003C/p\u003E\u003Cp\u003E • Participate in code reviews and help us level up frontend engineering across the team.\u003C/p\u003E\u003Cp\u003E \u003C/p\u003E\u003Cp\u003E What You’ll Need\u003C/p\u003E\u003Cp\u003E • Strong React fundamentals (Hooks, Context, state management, component design).\u003C/p\u003E\u003Cp\u003E • Experience working with REST APIs (bonus if you’ve touched GraphQL).\u003C/p\u003E\u003Cp\u003E • CSS mastery — Tailwind experience is a plus.\u003C/p\u003E\u003Cp\u003E • You write clean, testable code and aren’t afraid to refactor when needed.\u003C/p\u003E\u003Cp\u003E • Bonus points for experience with localization (i18n), accessibility, or offline-ready apps.\u003C/p\u003E",
+        "socialSharingDescription": "About the RoleAt Chapa, we’re building beautiful, fast, and accessible payment experiences for Africa and beyond. We’re looking for a React developer who thrives on turning designs into clean, functional UIs. If you care deeply about user experience, p...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cul\u003E \u003Cli\u003EPension Plan\u003C/li\u003E \u003Cli\u003EPaid Time Off\u003C/li\u003E \u003Cli\u003ETraining &amp; Development\u003C/li\u003E \u003Cli\u003EPerformance Bonus\u003C/li\u003E \u003Cli\u003Efree lunch\u003C/li\u003E \u003C/ul\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EStrong React fundamentals (Hooks, Context, state management, component design).\u003C/p\u003E\u003Cp\u003E • 2 years Experience working with REST APIs (bonus if you’ve touched GraphQL).\u003C/p\u003E\u003Cp\u003E • CSS mastery — Tailwind experience is a plus.\u003C/p\u003E\u003Cp\u003E • You write clean, testable code and aren’t afraid to refactor when needed.\u003C/p\u003E\u003Cp\u003E • Bonus points for experience with localization (i18n), accessibility, or offline-ready apps\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/7WzbMyqkL2e3fdo3ddacgR/frontend-developer-(react)-in-addis-ababa-at-chapa",
+        "language": "en",
+        "locations": [
+          "Addis Ababa, Addis Ababa, Ethiopia"
+        ],
+        "location": {
+          "city": "Addis Ababa",
+          "subregion": "Addis Ababa",
+          "countryName": "Ethiopia"
+        },
+        "created": "2025-06-28T00:00:00.000Z",
+        "updated": "2025-06-28T00:00:00.000Z",
+        "company": {
+          "id": "78f0265f-e7ae-43c6-bf11-94b4a045c76f",
+          "title": "Chapa",
+          "website": "http://chapa.co",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/659718/logo",
+          "description": "\u003Cp\u003EChapa empowers emerging companies and developers with a range of services, including Payment Gateways, Payment Applications and Equipment, APIs, and more. We're here to assist you whenever you need smooth business transactions. Gain access to comprehensive financial data, secure payment methods, and Bill Aggregator Solutions through us.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/fWaNVRM4NtFcSPYsrepic6/jobs-at-chapa",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/659718/social",
+          "socialSharingDescription": "Chapa is dedicated to empowering emerging companies and developers by offering a wide array of services. These include payment gateways, payment applications and equipment, APIs, and more. The company aims to ensure that its clients have access to seamles"
+        },
+        "workplace": "on_site"
+      },
+      {
+        "id": "305023e2-354c-4ab9-8be5-89ac3ce6bbf4",
+        "title": "React Developer",
+        "state": "published",
+        "description": "\u003Cp\u003EArcot Group is on the lookout for a skilled React Developer to join our innovative development team. In this role, you will be responsible for building user-friendly and dynamic web applications using React.js. You will collaborate with designers and backend developers to create seamless, high-performance applications that provide an exceptional user experience. If you have a passion for front-end development and a strong foundation in React, we’d love to hear from you!\u003C/p\u003E\u003Cbr /\u003E\u003Ch3\u003EKey Responsibilities\u003C/h3\u003E\u003Cul\u003E \u003Cli\u003EDeveloping and implementing user interface components using React.js.\u003C/li\u003E \u003Cli\u003ETranslating designs and wireframes into high-quality code.\u003C/li\u003E \u003Cli\u003EBuilding reusable components and front-end libraries for future use.\u003C/li\u003E \u003Cli\u003EOptimizing components for maximum performance across a vast array of web-capable devices and browsers.\u003C/li\u003E \u003Cli\u003ECollaborating with backend developers to integrate APIs and enhance application functionality.\u003C/li\u003E \u003Cli\u003EParticipating in code reviews and ensuring adherence to best practices.\u003C/li\u003E \u003Cli\u003EStaying updated with the latest industry trends and technologies.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Arcot Group is on the lookout for a skilled React Developer to join our innovative development team. In this role, you will be responsible for building user-friendly and dynamic web applications using React.js. You will collaborate with designers and b...",
+        "employmentType": "Full-time",
+        "benefitsSection": "",
+        "requirementsSection": "\u003Cul\u003E \u003Cli\u003EBachelor's degree in Computer Science, Information Technology, or a related field.\u003C/li\u003E \u003Cli\u003EProven experience as a React Developer or similar role.\u003C/li\u003E \u003Cli\u003EStrong proficiency in JavaScript, including ES6+ syntax and features.\u003C/li\u003E \u003Cli\u003EExperience with state management libraries (e.g., Redux, Context API).\u003C/li\u003E \u003Cli\u003EFamiliarity with RESTful APIs and asynchronous programming.\u003C/li\u003E \u003Cli\u003EUnderstanding of front-end development tools such as Webpack, Babel, and NPM.\u003C/li\u003E \u003Cli\u003EExcellent problem-solving skills and ability to work collaboratively in a team environment.\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/6Y2hTH1DFigfkbVXy66iCh/react-developer-in-navi-mumbai-at-arcot-group",
+        "language": "en",
+        "locations": [
+          "Navi Mumbai, Maharashtra, India"
+        ],
+        "location": {
+          "city": "Navi Mumbai",
+          "subregion": "Maharashtra",
+          "countryName": "India"
+        },
+        "created": "2025-04-10T00:00:00.000Z",
+        "updated": "2025-04-10T00:00:00.000Z",
+        "company": {
+          "id": "e435323b-d9c8-4a64-800a-9c1ae4f5da13",
+          "title": "Arcot Group",
+          "website": "http://arcotgroup.com",
+          "description": "",
+          "url": "https://jobs.workable.com/company/ubrLasmWzPh8GhYUUh82fK/jobs-at-arcot-group"
+        },
+        "workplace": "on_site"
+      },
+      {
+        "department": "Information Technology",
+        "id": "ec22d32d-273f-4c19-a472-046b1188f73d",
+        "title": "Full Stack Developer (React Native | Node.js)",
+        "state": "published",
+        "description": "\u003Cp\u003ECharger logistics Inc. is a world- class asset-based carrier with locations across North America. With over 20 years of experience providing the best logistics solutions, Charger logistics has transformed into a world-class transport provider and continue to grow.\u003C/p\u003E\u003Cp\u003ECharger logistics invests time and support into its employees to provide them with the room to learn and grow their expertise and work their way up. We are entrepreneurial-minded organization that welcomes and support individual idea and strategies. We are seeking a \u003Cstrong\u003Ehighly skilled Full Stack Developer\u003C/strong\u003E with expertise in frontend frameworks like \u003Cstrong\u003EReact Native\u003C/strong\u003E, \u003Cstrong\u003ENoSQL \u003C/strong\u003Ealong with backend technologies like \u003Cstrong\u003ENode.js\u003C/strong\u003E and \u003Cstrong\u003ENestJS\u003C/strong\u003E. The ideal candidate will be passionate about building modern web and mobile applications and collaborating cross-functionally to deliver scalable, secure, and high-performance digital experiences.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EResponsibilities: \u003C/strong\u003E\u003Cbr /\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDevelop full-stack features for web and mobile platforms using \u003Cstrong\u003EReact, React Native , Firebase.\u003C/strong\u003E \u003C/li\u003E \u003Cli\u003EArchitect and implement secure, high-performing APIs using \u003Cstrong\u003ENode.js\u003C/strong\u003E, \u003Cstrong\u003EExpress\u003C/strong\u003E, \u003Cstrong\u003ENestJS\u003C/strong\u003E, and \u003Cstrong\u003EGraphQL\u003C/strong\u003E.\u003C/li\u003E \u003Cli\u003EWrite and maintain clean, efficient, and well-documented \u003Cstrong\u003ETypeScript\u003C/strong\u003E and \u003Cstrong\u003EJavaScript (ES6+)\u003C/strong\u003E code.\u003C/li\u003E \u003Cli\u003ECollaborate closely with product managers, UI/UX designers, and QA engineers to iterate quickly and deliver quality features.\u003C/li\u003E \u003Cli\u003EOptimize application performance, responsiveness, and scalability.\u003C/li\u003E \u003Cli\u003EBuild responsive UIs using \u003Cstrong\u003ETailwind CSS\u003C/strong\u003E and manage complex state via \u003Cstrong\u003ERedux\u003C/strong\u003E.\u003C/li\u003E \u003Cli\u003EConduct thorough code reviews, testing, and debugging to ensure software quality.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Charger logistics Inc. is a world- class asset-based carrier with locations across North America. With over 20 years of experience providing the best logistics solutions, Charger logistics has transformed into a world-class transport provider and conti...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cul\u003E \u003Cli\u003EHealth Benefits\u003C/li\u003E \u003Cli\u003ECareer Growth\u003C/li\u003E \u003Cli\u003EHigh Competitive Salary\u003C/li\u003E \u003C/ul\u003E",
+        "requirementsSection": "\u003Cul\u003E \u003Cli\u003E \u003Cstrong\u003E3+ years\u003C/strong\u003E of professional experience in full-stack software development.\u003C/li\u003E \u003Cli\u003EProficient in \u003Cstrong\u003EReact\u003C/strong\u003E, \u003Cstrong\u003ENext.js\u003C/strong\u003E, and \u003Cstrong\u003EReact Native\u003C/strong\u003E.\u003C/li\u003E \u003Cli\u003E\u003Cstrong\u003EStrong experience of Firebase (Authentication, Firestore) is needed.\u003C/strong\u003E\u003C/li\u003E \u003Cli\u003ESolid understanding of \u003Cstrong\u003ETypeScript\u003C/strong\u003E and \u003Cstrong\u003Emodern JavaScript (ES6+)\u003C/strong\u003E.\u003C/li\u003E \u003Cli\u003EExperience with \u003Cstrong\u003ETailwind CSS\u003C/strong\u003E, \u003Cstrong\u003ERedux\u003C/strong\u003E, and performance optimization tools.\u003C/li\u003E \u003Cli\u003EComfortable with backend service design using \u003Cstrong\u003ENode.js\u003C/strong\u003E or \u003Cstrong\u003EExpress\u003C/strong\u003E.\u003Cbr /\u003E \u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003ENice to Have:\u003Cbr /\u003E\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EFamiliarity with automated testing frameworks (e.g., Jest, Cypress).\u003C/li\u003E \u003Cli\u003EContributions to open-source projects or an active GitHub portfolio.\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/vaeafAUvaEg6qE8ZJfGrqH/full-stack-developer-(react-native-%7C-node.js)-in-brampton-at-charger-logistics-inc",
+        "language": "en",
+        "locations": [
+          "Brampton, Ontario, Canada"
+        ],
+        "location": {
+          "city": "Brampton",
+          "subregion": "Ontario",
+          "countryName": "Canada"
+        },
+        "created": "2025-06-27T00:00:00.000Z",
+        "updated": "2025-06-27T00:00:00.000Z",
+        "company": {
+          "id": "ba0928e6-6273-49bc-b2cc-c62cfc848d4a",
+          "title": "Charger Logistics Inc",
+          "website": "http://www.chargerlogistics.com",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/322911/logo",
+          "description": "",
+          "url": "https://jobs.workable.com/company/oYpsHy2xVXN4Z9WrNpD8G7/jobs-at-charger-logistics-inc"
+        },
+        "workplace": "on_site"
+      },
+      {
+        "department": "IE & UK",
+        "id": "b1424704-3c22-4f59-9dfb-b703b2249ded",
+        "title": "Senior Software Engineer (.NET / React)",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003ECome shape the future of education with us.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EAre you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We're a leading global provider of School Management Information Systems (MIS), already trusted by over 5,000 schools across Australia, Ireland, and the UK.\u003C/p\u003E\u003Cp\u003EWe're on a journey of growth with vast market opportunities ahead, and we're searching for a passionate Senior Software Engineer to join our dynamic team. If you're a thinker and a problem-solver who thrives in a collaborative environment and celebrates diversity, you'll fit right in. You'll join our talented product team in Ireland, directly contributing to transforming the lives of teachers, students, and parents through our software.\u003C/p\u003E\u003Cp\u003EYou'll be an integral part of a fun, hardworking product team that takes immense pride and ownership in their work. We believe in celebrating our successes, big and small, as we deliver impactful wins for both our customers and Compass.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAbout the Role &amp; Team\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EReporting to our Development Manager, you'll focus on building and deploying new functionalities, supporting and enhancing existing features, and improving site scalability, infrastructure, and testing. You'll do all of this within a highly collaborative and agile environment where your contributions are valued and impactful.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAs a Software Engineer you will:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDesign, develop, and maintain secure, scalable software that will be used by thousands of students, parents, and teachers worldwide – making a tangible difference in their daily lives.\u003C/li\u003E \u003Cli\u003EChampion software craftsmanship, clean code, and pair programming to inspire quality and best practices across the team. Your expertise will help us build robust and maintainable solutions.\u003C/li\u003E \u003Cli\u003ECultivate strong relationships with your team. We encourage open communication, so you'll be generous with your thoughts and feedback, and equally open to receiving it.\u003C/li\u003E \u003Cli\u003EGrow, learn, and thrive in a team that is committed to your success. We invest in our people and provide the resources you need to excel.\u003C/li\u003E \u003Cli\u003EMentor your colleagues and drive our architectural strategy by applying industry best practices and adhering to our Compass software engineering guidelines.\u003C/li\u003E \u003Cli\u003ECollaborate closely with Product Owners and Designers to deeply understand customer needs and shape products that truly solve their problems.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Come shape the future of education with us.Are you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We&#39;re a leading global provider...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EWhat’s in it for you?\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EWe come together with our unique strengths to work towards a common purpose - shaping the future of education. When you join our team, you will collaborate with individuals who are passionate, driven, and open to embracing change in a fast-paced environment.\u003C/li\u003E \u003Cli\u003EA flexible working environment - our teams work 3 days in our office in Dublin.\u003C/li\u003E \u003Cli\u003EPrivate health insurance options to support your well-being.\u003C/li\u003E \u003Cli\u003ELearning &amp; Development opportunities - we want you to grow and get the most out of your role!\u003C/li\u003E \u003Cli\u003E20 days Annual Leave + all statutory Public &amp; Bank Holidays.\u003C/li\u003E \u003Cli\u003E24/7 access to our Employment Assistance Program (EAP) through the means of face-to-face, livechat and phone support.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EIt is a really exciting time to join Compass. We are growing and are looking for ambitious individuals who want to grow alongside us. Compass is proud to be an equal opportunity employer. We embrace and celebrate diversity and are committed to creating an inclusive environment for all employees.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cem\u003EPrior to commencing employment, we will require:\u003C/em\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EVerification of unrestricted work rights in Ireland (eg citizenship, passport, or birth certificate).\u003Ca href=\"https://apply.workable.com/compass-education/j/241806D0D4/apply/\" rel=\"nofollow noreferrer noopener\"\u003E\u003C/a\u003E \u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EReady to make a difference?\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EApply today and help us empower schools to focus on what matters most: teaching and learning.\u003C/p\u003E\u003Cp\u003EFind out more about Compass on our website - \u003Ca href=\"https://www.compass.education/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003Ehttps://www.compass.education/\u003C/a\u003E.\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003Cstrong\u003EAbout You\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EWe're looking for a Senior Software Engineer with a proven track record and a passion for crafting exceptional software. \u003C/p\u003E\u003Cp\u003EHere's what will make you a great fit for our team:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E5+ years of hands-on experience in object-oriented programming languages (e.g., C#, C++).\u003C/li\u003E \u003Cli\u003E5+ years of real-world experience with modern frontend JavaScript, libraries, and frameworks (e.g., JavaScript, HTML, CSS, React, Vue, TypeScript).\u003C/li\u003E \u003Cli\u003EComfortable designing and implementing database solutions with experience in both SQL and NoSQL databases. \u003C/li\u003E \u003Cli\u003EA keen interest in developing a high-quality product that not only meets but exceeds company objectives, collaborating seamlessly with other talented developers.\u003C/li\u003E \u003Cli\u003EA genuine passion for software development and a proactive interest in staying up-to-date with new technologies and industry trends.\u003C/li\u003E \u003Cli\u003EExtensive experience troubleshooting complex software systems, coupled with the ability to identify when a problem is truly worth solving for both the customer and the business. \u003C/li\u003E \u003Cli\u003EA passion for mentoring junior colleagues and a genuine interest in helping them grow and develop as engineers. \u003C/li\u003E \u003Cli\u003EPride and ownership over the software you build. \u003C/li\u003E \u003Cli\u003EProven experience with modern product and engineering principles and practices. You understand agile methodologies and how to deliver value iteratively.\u003C/li\u003E \u003Cli\u003EStrong communication and collaboration abilities. You can articulate complex technical concepts clearly and work effectively within a team.\u003C/li\u003E \u003Cli\u003EThe ability to work both independently and as part of a cohesive team environment. \u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EBonus Points for:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EExperience with React Native\u003C/li\u003E \u003Cli\u003EHigh-level Swift/Objective-C and Kotlin experience\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/nTxwX52aqaMWZ3pnPboUyM/hybrid-senior-software-engineer-(.net-%2F-react)-in-dublin-at-compass-education",
+        "language": "en",
+        "locations": [
+          "Dublin, County Dublin, Ireland"
+        ],
+        "location": {
+          "city": "Dublin",
+          "subregion": "County Dublin",
+          "countryName": "Ireland"
+        },
+        "created": "2025-06-27T00:00:00.000Z",
+        "updated": "2025-06-27T00:00:00.000Z",
+        "company": {
+          "id": "bb697eaf-f5cf-4237-9507-88c173e3eca1",
+          "title": "Compass Education",
+          "website": "http://compass.education",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/572546/logo",
+          "description": "\u003Cp\u003EIn 2009, Compass founders John de la Motte and Lucas Filer met over a team lunch. While chowing down on their cafeteria sandwiches they bonded over their unapologetically nerdy love for education technology.\u003C/p\u003E\u003Cp\u003EJohn and Lucas were sure there was a way to use technology to improve processes in school communities; a way of making tech part of everyday activities, like ordering a pie in the canteen, or letting parents know how their kids were performing in class.\u003C/p\u003E\u003Cp\u003EAfter months of white-boarding and long days spent writing thousands of lines of code, Compass 1.0 came to life. However, the journey had only just begun and with the valuable input of foundational schools John and Lucas were able to add new features to the platform to meet school’s needs.\u003C/p\u003E\u003Cp\u003EFast forward a decade and Compass’ school management ecosystem is now used in more than 4,500 schools in Australia and beyond: from Melbourne to Mountrath (that’s in Ireland!), Toronto to Toowoomba.\u003C/p\u003E\u003Cp\u003EIt’s no longer just John and Lucas eating sandwiches at the lunch table. Now they’re joined by 250+ members of the Compass team, delivering smart school management solutions around the world.\u003C/p\u003E\u003Cp\u003ECompass now offer a comprehensive suite of modules that connects the entire school community. Schools are now able to simplify processes and reduce their administrative burden so everyone can focus on achieving their school’s version of success.\u003C/p\u003E\u003Cp\u003ENot bad for an idea formed over a lunch break.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/p9gbuotggcdvaWi9Z6H18T/jobs-at-compass-education",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/572546/social",
+          "socialSharingDescription": "We are Compass - smart school management in one connected platform. We believe that time spent in the classroom should be for learning and teaching.\n"
+        },
+        "workplace": "hybrid"
+      },
+      {
+        "department": "IE & UK",
+        "id": "3fb100bd-af19-48a5-a935-0f372f9507f4",
+        "title": "Senior Software Engineer (.NET / React)",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003ECome shape the future of education with us.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EAre you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We're a leading global provider of School Management Information Systems (MIS), already trusted by over 5,000 schools across Australia, Ireland, and the UK.\u003C/p\u003E\u003Cp\u003EWe're on a journey of growth with vast market opportunities ahead, and we're searching for a passionate Senior Software Engineer to join our dynamic team. If you're a thinker and a problem-solver who thrives in a collaborative environment and celebrates diversity, you'll fit right in. You'll join our talented product team in Ireland, directly contributing to transforming the lives of teachers, students, and parents through our software.\u003C/p\u003E\u003Cp\u003EYou'll be an integral part of a fun, hardworking product team that takes immense pride and ownership in their work. We believe in celebrating our successes, big and small, as we deliver impactful wins for both our customers and Compass.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAbout the Role &amp; Team\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EReporting to our Development Manager, you'll focus on building and deploying new functionalities, supporting and enhancing existing features, and improving site scalability, infrastructure, and testing. You'll do all of this within a highly collaborative and agile environment where your contributions are valued and impactful.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAs a Software Engineer you will:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDesign, develop, and maintain secure, scalable software that will be used by thousands of students, parents, and teachers worldwide – making a tangible difference in their daily lives.\u003C/li\u003E \u003Cli\u003EChampion software craftsmanship, clean code, and pair programming to inspire quality and best practices across the team. Your expertise will help us build robust and maintainable solutions.\u003C/li\u003E \u003Cli\u003ECultivate strong relationships with your team. We encourage open communication, so you'll be generous with your thoughts and feedback, and equally open to receiving it.\u003C/li\u003E \u003Cli\u003EGrow, learn, and thrive in a team that is committed to your success. We invest in our people and provide the resources you need to excel.\u003C/li\u003E \u003Cli\u003EMentor your colleagues and drive our architectural strategy by applying industry best practices and adhering to our Compass software engineering guidelines.\u003C/li\u003E \u003Cli\u003ECollaborate closely with Product Owners and Designers to deeply understand customer needs and shape products that truly solve their problems.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Come shape the future of education with us.Are you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We&#39;re a leading global provider...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003E\u003Cstrong\u003EWhat’s in it for you?\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EWe come together with our unique strengths to work towards a common purpose - shaping the future of education. When you join our team, you will collaborate with individuals who are passionate, driven, and open to embracing change in a fast-paced environment.\u003C/li\u003E \u003Cli\u003EA flexible working environment - our teams work 3 days in our office in Hammersmith.\u003C/li\u003E \u003Cli\u003ELearning &amp; Development opportunities - we want you to grow and get the most out of your role!\u003C/li\u003E \u003Cli\u003E25 days Annual Leave + all statutory Public &amp; Bank Holidays.\u003C/li\u003E \u003Cli\u003E9.5% employer pension contribution to help you plan for the future.\u003C/li\u003E \u003Cli\u003E24/7 access to our Employment Assistance Program (EAP) through the means of face-to-face, livechat and phone support.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EIt is a really exciting time to join Compass. We are growing and are looking for ambitious individuals who want to grow alongside us. Compass is proud to be an equal opportunity employer. We embrace and celebrate diversity and are committed to creating an inclusive environment for all employees.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cem\u003EPrior to commencing employment, we will require:\u003C/em\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EVerification of unrestricted work rights in the UK (eg citizenship, passport, or birth certificate).\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Ca href=\"https://apply.workable.com/compass-education/j/241806D0D4/apply/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003E\u003C/a\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EReady to make a difference?\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EApply today and help us empower schools to focus on what matters most: teaching and learning.\u003C/p\u003E\u003Cp\u003EFind out more about Compass on our website - \u003Ca href=\"https://www.compass.education/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003Ehttps://www.compass.education/\u003C/a\u003E.\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003Cstrong\u003EAbout You\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EWe're looking for a Senior Software Engineer with a proven track record and a passion for crafting exceptional software.\u003C/p\u003E\u003Cp\u003EHere's what will make you a great fit for our team:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E5+ years of hands-on experience in object-oriented programming languages (e.g., C#, C++).\u003C/li\u003E \u003Cli\u003E5+ years of real-world experience with modern frontend JavaScript, libraries, and frameworks (e.g., JavaScript, HTML, CSS, React, Vue, TypeScript).\u003C/li\u003E \u003Cli\u003EComfortable designing and implementing database solutions with experience in both SQL and NoSQL databases.\u003C/li\u003E \u003Cli\u003EA keen interest in developing a high-quality product that not only meets but exceeds company objectives, collaborating seamlessly with other talented developers.\u003C/li\u003E \u003Cli\u003EA genuine passion for software development and a proactive interest in staying up-to-date with new technologies and industry trends.\u003C/li\u003E \u003Cli\u003EExtensive experience troubleshooting complex software systems, coupled with the ability to identify when a problem is truly worth solving for both the customer and the business.\u003C/li\u003E \u003Cli\u003EA passion for mentoring junior colleagues and a genuine interest in helping them grow and develop as engineers.\u003C/li\u003E \u003Cli\u003EPride and ownership over the software you build.\u003C/li\u003E \u003Cli\u003EProven experience with modern product and engineering principles and practices. You understand agile methodologies and how to deliver value iteratively.\u003C/li\u003E \u003Cli\u003EStrong communication and collaboration abilities. You can articulate complex technical concepts clearly and work effectively within a team.\u003C/li\u003E \u003Cli\u003EThe ability to work both independently and as part of a cohesive team environment.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EBonus Points for:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EExperience with React Native\u003C/li\u003E \u003Cli\u003EHigh-level Swift/Objective-C and Kotlin experience\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/8SatYZZNocTDTDDpUxuG6A/hybrid-senior-software-engineer-(.net-%2F-react)-in-london-at-compass-education",
+        "language": "en",
+        "locations": [
+          "London, England, United Kingdom"
+        ],
+        "location": {
+          "city": "London",
+          "subregion": "England",
+          "countryName": "United Kingdom"
+        },
+        "created": "2025-06-27T00:00:00.000Z",
+        "updated": "2025-06-27T00:00:00.000Z",
+        "company": {
+          "id": "bb697eaf-f5cf-4237-9507-88c173e3eca1",
+          "title": "Compass Education",
+          "website": "http://compass.education",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/572546/logo",
+          "description": "\u003Cp\u003EIn 2009, Compass founders John de la Motte and Lucas Filer met over a team lunch. While chowing down on their cafeteria sandwiches they bonded over their unapologetically nerdy love for education technology.\u003C/p\u003E\u003Cp\u003EJohn and Lucas were sure there was a way to use technology to improve processes in school communities; a way of making tech part of everyday activities, like ordering a pie in the canteen, or letting parents know how their kids were performing in class.\u003C/p\u003E\u003Cp\u003EAfter months of white-boarding and long days spent writing thousands of lines of code, Compass 1.0 came to life. However, the journey had only just begun and with the valuable input of foundational schools John and Lucas were able to add new features to the platform to meet school’s needs.\u003C/p\u003E\u003Cp\u003EFast forward a decade and Compass’ school management ecosystem is now used in more than 4,500 schools in Australia and beyond: from Melbourne to Mountrath (that’s in Ireland!), Toronto to Toowoomba.\u003C/p\u003E\u003Cp\u003EIt’s no longer just John and Lucas eating sandwiches at the lunch table. Now they’re joined by 250+ members of the Compass team, delivering smart school management solutions around the world.\u003C/p\u003E\u003Cp\u003ECompass now offer a comprehensive suite of modules that connects the entire school community. Schools are now able to simplify processes and reduce their administrative burden so everyone can focus on achieving their school’s version of success.\u003C/p\u003E\u003Cp\u003ENot bad for an idea formed over a lunch break.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/p9gbuotggcdvaWi9Z6H18T/jobs-at-compass-education",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/572546/social",
+          "socialSharingDescription": "We are Compass - smart school management in one connected platform. We believe that time spent in the classroom should be for learning and teaching.\n"
+        },
+        "workplace": "hybrid"
+      },
+      {
+        "department": "IE & UK",
+        "id": "9987f89c-c98d-4e51-a83e-9f98bfa12d39",
+        "title": "Mid-Level Software Engineer (.NET / React)",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003ECome shape the future of education with us.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EAre you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We're a leading global provider of School Management Information Systems (MIS), already trusted by over 5,000 schools across Australia, Ireland, and the UK.\u003C/p\u003E\u003Cp\u003EWe're on a journey of growth with vast market opportunities ahead, and we're searching for a passionate Mid-Level Software Engineer to join our dynamic team. If you're a thinker and a problem-solver who thrives in a collaborative environment and celebrates diversity, you'll fit right in. You'll join our talented product team in Ireland, directly contributing to transforming the lives of teachers, students, and parents through our software.\u003C/p\u003E\u003Cp\u003EYou'll be an integral part of a fun, hardworking product team that takes immense pride and ownership in their work. We believe in celebrating our successes, big and small, as we deliver impactful wins for both our customers and Compass.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAbout the Role &amp; Team\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EReporting to our Development Manager, you'll focus on building and deploying new functionalities, supporting and enhancing existing features, and improving site scalability, infrastructure, and testing. You'll do all of this within a highly collaborative and agile environment where your contributions are valued and impactful.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAs a Software Engineer you will:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDesign, develop, and maintain secure, scalable software that will be used by thousands of students, parents, and teachers worldwide – making a tangible difference in their daily lives.\u003C/li\u003E \u003Cli\u003EChampion software craftsmanship, clean code, and pair programming to inspire quality and best practices across the team. Your expertise will help us build robust and maintainable solutions.\u003C/li\u003E \u003Cli\u003ECultivate strong relationships with your team. We encourage open communication, so you'll be generous with your thoughts and feedback, and equally open to receiving it.\u003C/li\u003E \u003Cli\u003EGrow, learn, and thrive in a team that is committed to your success. We invest in our people and provide the resources you need to excel.\u003C/li\u003E \u003Cli\u003EHelp drive our architectural strategy by applying industry best practices and adhering to our Compass software engineering guidelines.\u003C/li\u003E \u003Cli\u003ECollaborate closely with Product Owners and Designers to deeply understand customer needs and shape products that truly solve their problems.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Come shape the future of education with us.Are you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We&#39;re a leading global provider...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003E\u003Cstrong\u003EWhat’s in it for you?\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EWe come together with our unique strengths to work towards a common purpose - shaping the future of education. When you join our team, you will collaborate with individuals who are passionate, driven, and open to embracing change in a fast-paced environment.\u003C/li\u003E \u003Cli\u003EA flexible working environment - our teams work 3 days in our office in Hammersmith.\u003C/li\u003E \u003Cli\u003ELearning &amp; Development opportunities - we want you to grow and get the most out of your role!\u003C/li\u003E \u003Cli\u003E25 days Annual Leave + all statutory Public &amp; Bank Holidays.\u003C/li\u003E \u003Cli\u003E9.5% employer pension contribution to help you plan for the future.\u003C/li\u003E \u003Cli\u003E24/7 access to our Employment Assistance Program (EAP) through the means of face-to-face, livechat and phone support.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EIt is a really exciting time to join Compass. We are growing and are looking for ambitious individuals who want to grow alongside us. Compass is proud to be an equal opportunity employer. We embrace and celebrate diversity and are committed to creating an inclusive environment for all employees.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cem\u003EPrior to commencing employment, we will require:\u003C/em\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EVerification of unrestricted work rights in the UK (eg citizenship, passport, or birth certificate).\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003Ca href=\"https://apply.workable.com/compass-education/j/241806D0D4/apply/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003E\u003C/a\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EReady to make a difference?\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EApply today and help us empower schools to focus on what matters most: teaching and learning.\u003C/p\u003E\u003Cp\u003EFind out more about Compass on our website - \u003Ca href=\"https://www.compass.education/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003Ehttps://www.compass.education/\u003C/a\u003E.\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003Cstrong\u003EAbout You\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EWe're looking for a Mid-Level Software Engineer with a proven track record and a passion for crafting exceptional software.\u003C/p\u003E\u003Cp\u003EHere's what will make you a great fit for our team:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E3+ years of hands-on experience in object-oriented programming languages (e.g., C#, C++).\u003C/li\u003E \u003Cli\u003E3+ years of real-world experience with modern frontend JavaScript, libraries, and frameworks (e.g., JavaScript, HTML, CSS, React, Vue, TypeScript).\u003C/li\u003E \u003Cli\u003EComfortable designing and implementing database solutions with experience in both SQL and NoSQL databases, such as MongoDB.\u003C/li\u003E \u003Cli\u003EA keen interest in developing a high-quality product that not only meets but exceeds company objectives, collaborating seamlessly with other talented developers.\u003C/li\u003E \u003Cli\u003EA genuine passion for software development and a proactive interest in staying up-to-date with new technologies and industry trends.\u003C/li\u003E \u003Cli\u003EPride and ownership over the software you build.\u003C/li\u003E \u003Cli\u003EProven experience with modern product and engineering principles and practices. You understand agile methodologies and how to deliver value iteratively.\u003C/li\u003E \u003Cli\u003EStrong communication and collaboration abilities. You can articulate complex technical concepts clearly and work effectively within a team.\u003C/li\u003E \u003Cli\u003EThe ability to work both independently and as part of a cohesive team environment.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EBonus Points for:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EExperience with Java, Spring Framework, RabbitMQ or AWS\u003C/li\u003E\u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/jXAZRfeSvc1QRyaU9NRf1Z/hybrid-mid-level-software-engineer-(.net-%2F-react)-in-london-at-compass-education",
+        "language": "en",
+        "locations": [
+          "London, England, United Kingdom"
+        ],
+        "location": {
+          "city": "London",
+          "subregion": "England",
+          "countryName": "United Kingdom"
+        },
+        "created": "2025-06-27T00:00:00.000Z",
+        "updated": "2025-06-27T00:00:00.000Z",
+        "company": {
+          "id": "bb697eaf-f5cf-4237-9507-88c173e3eca1",
+          "title": "Compass Education",
+          "website": "http://compass.education",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/572546/logo",
+          "description": "\u003Cp\u003EIn 2009, Compass founders John de la Motte and Lucas Filer met over a team lunch. While chowing down on their cafeteria sandwiches they bonded over their unapologetically nerdy love for education technology.\u003C/p\u003E\u003Cp\u003EJohn and Lucas were sure there was a way to use technology to improve processes in school communities; a way of making tech part of everyday activities, like ordering a pie in the canteen, or letting parents know how their kids were performing in class.\u003C/p\u003E\u003Cp\u003EAfter months of white-boarding and long days spent writing thousands of lines of code, Compass 1.0 came to life. However, the journey had only just begun and with the valuable input of foundational schools John and Lucas were able to add new features to the platform to meet school’s needs.\u003C/p\u003E\u003Cp\u003EFast forward a decade and Compass’ school management ecosystem is now used in more than 4,500 schools in Australia and beyond: from Melbourne to Mountrath (that’s in Ireland!), Toronto to Toowoomba.\u003C/p\u003E\u003Cp\u003EIt’s no longer just John and Lucas eating sandwiches at the lunch table. Now they’re joined by 250+ members of the Compass team, delivering smart school management solutions around the world.\u003C/p\u003E\u003Cp\u003ECompass now offer a comprehensive suite of modules that connects the entire school community. Schools are now able to simplify processes and reduce their administrative burden so everyone can focus on achieving their school’s version of success.\u003C/p\u003E\u003Cp\u003ENot bad for an idea formed over a lunch break.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/p9gbuotggcdvaWi9Z6H18T/jobs-at-compass-education",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/572546/social",
+          "socialSharingDescription": "We are Compass - smart school management in one connected platform. We believe that time spent in the classroom should be for learning and teaching.\n"
+        },
+        "workplace": "hybrid"
+      },
+      {
+        "department": "IE & UK",
+        "id": "3ddb3368-bb5f-4a3e-83c3-c0da7be097d3",
+        "title": "Mid-Level Software Engineer (.NET / React)",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003ECome shape the future of education with us.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EAre you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We're a leading global provider of School Management Information Systems (MIS), already trusted by over 5,000 schools across Australia, Ireland, and the UK.\u003C/p\u003E\u003Cp\u003EWe're on a journey of growth with vast market opportunities ahead, and we're searching for a passionate Mid-Level Software Engineer to join our dynamic team. If you're a thinker and a problem-solver who thrives in a collaborative environment and celebrates diversity, you'll fit right in. You'll join our talented product team in Ireland, directly contributing to transforming the lives of teachers, students, and parents through our software.\u003C/p\u003E\u003Cp\u003EYou'll be an integral part of a fun, hardworking product team that takes immense pride and ownership in their work. We believe in celebrating our successes, big and small, as we deliver impactful wins for both our customers and Compass.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAbout the Role &amp; Team\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EReporting to our Development Manager, you'll focus on building and deploying new functionalities, supporting and enhancing existing features, and improving site scalability, infrastructure, and testing. You'll do all of this within a highly collaborative and agile environment where your contributions are valued and impactful.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EAs a Software Engineer you will:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDesign, develop, and maintain secure, scalable software that will be used by thousands of students, parents, and teachers worldwide – making a tangible difference in their daily lives.\u003C/li\u003E \u003Cli\u003EChampion software craftsmanship, clean code, and pair programming to inspire quality and best practices across the team. Your expertise will help us build robust and maintainable solutions.\u003C/li\u003E \u003Cli\u003ECultivate strong relationships with your team. We encourage open communication, so you'll be generous with your thoughts and feedback, and equally open to receiving it.\u003C/li\u003E \u003Cli\u003EGrow, learn, and thrive in a team that is committed to your success. We invest in our people and provide the resources you need to excel.\u003C/li\u003E \u003Cli\u003EHelp drive our architectural strategy by applying industry best practices and adhering to our Compass software engineering guidelines.\u003C/li\u003E \u003Cli\u003ECollaborate closely with Product Owners and Designers to deeply understand customer needs and shape products that truly solve their problems.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Come shape the future of education with us.Are you ready to make a real impact on education globally? At Compass, our people are united by a common purpose, to simplify school management and improve student outcomes. We&#39;re a leading global provider...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003E\u003Cstrong\u003EWhat’s in it for you?\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EWe come together with our unique strengths to work towards a common purpose - shaping the future of education. When you join our team, you will collaborate with individuals who are passionate, driven, and open to embracing change in a fast-paced environment.\u003C/li\u003E \u003Cli\u003EA flexible working environment - our teams work 3 days in our office in Dublin.\u003C/li\u003E \u003Cli\u003EPrivate health insurance options to support your well-being.\u003C/li\u003E \u003Cli\u003ELearning &amp; Development opportunities - we want you to grow and get the most out of your role!\u003C/li\u003E \u003Cli\u003E20 days Annual Leave + all statutory Public &amp; Bank Holidays.\u003C/li\u003E \u003Cli\u003E24/7 access to our Employment Assistance Program (EAP) through the means of face-to-face, livechat and phone support.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EIt is a really exciting time to join Compass. We are growing and are looking for ambitious individuals who want to grow alongside us. Compass is proud to be an equal opportunity employer. We embrace and celebrate diversity and are committed to creating an inclusive environment for all employees.\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003Cem\u003EPrior to commencing employment, we will require:\u003C/em\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EVerification of unrestricted work rights in Ireland (eg citizenship, passport, or birth certificate).\u003Ca href=\"https://apply.workable.com/compass-education/j/241806D0D4/apply/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003E\u003C/a\u003E \u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EReady to make a difference?\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EApply today and help us empower schools to focus on what matters most: teaching and learning.\u003C/p\u003E\u003Cp\u003EFind out more about Compass on our website - \u003Ca href=\"https://www.compass.education/\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003Ehttps://www.compass.education/\u003C/a\u003E.\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003Cstrong\u003EAbout You\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EWe're looking for a Mid-Level Software Engineer with a proven track record and a passion for crafting exceptional software.\u003C/p\u003E\u003Cp\u003EHere's what will make you a great fit for our team:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E3+ years of hands-on experience in object-oriented programming languages (e.g., C#, C++).\u003C/li\u003E \u003Cli\u003E3+ years of real-world experience with modern frontend JavaScript, libraries, and frameworks (e.g., JavaScript, HTML, CSS, React, Vue, TypeScript).\u003C/li\u003E \u003Cli\u003EComfortable designing and implementing database solutions with experience in both SQL and NoSQL databases, such as MongoDB.\u003C/li\u003E \u003Cli\u003EA keen interest in developing a high-quality product that not only meets but exceeds company objectives, collaborating seamlessly with other talented developers.\u003C/li\u003E \u003Cli\u003EA genuine passion for software development and a proactive interest in staying up-to-date with new technologies and industry trends.\u003C/li\u003E \u003Cli\u003EPride and ownership over the software you build.\u003C/li\u003E \u003Cli\u003EProven experience with modern product and engineering principles and practices. You understand agile methodologies and how to deliver value iteratively.\u003C/li\u003E \u003Cli\u003EStrong communication and collaboration abilities. You can articulate complex technical concepts clearly and work effectively within a team.\u003C/li\u003E \u003Cli\u003EThe ability to work both independently and as part of a cohesive team environment.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EBonus Points for:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E\u003Cli\u003EExperience with Java, Spring Framework, RabbitMQ or AWS\u003C/li\u003E\u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/8D29Tubb3Rab9LQ8vjdvdF/hybrid-mid-level-software-engineer-(.net-%2F-react)-in-dublin-at-compass-education",
+        "language": "en",
+        "locations": [
+          "Dublin, County Dublin, Ireland"
+        ],
+        "location": {
+          "city": "Dublin",
+          "subregion": "County Dublin",
+          "countryName": "Ireland"
+        },
+        "created": "2025-06-27T00:00:00.000Z",
+        "updated": "2025-06-27T00:00:00.000Z",
+        "company": {
+          "id": "bb697eaf-f5cf-4237-9507-88c173e3eca1",
+          "title": "Compass Education",
+          "website": "http://compass.education",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/572546/logo",
+          "description": "\u003Cp\u003EIn 2009, Compass founders John de la Motte and Lucas Filer met over a team lunch. While chowing down on their cafeteria sandwiches they bonded over their unapologetically nerdy love for education technology.\u003C/p\u003E\u003Cp\u003EJohn and Lucas were sure there was a way to use technology to improve processes in school communities; a way of making tech part of everyday activities, like ordering a pie in the canteen, or letting parents know how their kids were performing in class.\u003C/p\u003E\u003Cp\u003EAfter months of white-boarding and long days spent writing thousands of lines of code, Compass 1.0 came to life. However, the journey had only just begun and with the valuable input of foundational schools John and Lucas were able to add new features to the platform to meet school’s needs.\u003C/p\u003E\u003Cp\u003EFast forward a decade and Compass’ school management ecosystem is now used in more than 4,500 schools in Australia and beyond: from Melbourne to Mountrath (that’s in Ireland!), Toronto to Toowoomba.\u003C/p\u003E\u003Cp\u003EIt’s no longer just John and Lucas eating sandwiches at the lunch table. Now they’re joined by 250+ members of the Compass team, delivering smart school management solutions around the world.\u003C/p\u003E\u003Cp\u003ECompass now offer a comprehensive suite of modules that connects the entire school community. Schools are now able to simplify processes and reduce their administrative burden so everyone can focus on achieving their school’s version of success.\u003C/p\u003E\u003Cp\u003ENot bad for an idea formed over a lunch break.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/p9gbuotggcdvaWi9Z6H18T/jobs-at-compass-education",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/572546/social",
+          "socialSharingDescription": "We are Compass - smart school management in one connected platform. We believe that time spent in the classroom should be for learning and teaching.\n"
+        },
+        "workplace": "hybrid"
+      },
+      {
+        "department": "Technology",
+        "id": "ff655d0f-8e56-42d0-91fb-ea746874445b",
+        "title": "Senior Full Stack Engineer (.NET & Vue/React)",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003ETop 3 Reasons To Join Us\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003ECompetitive Salary\u003C/li\u003E \u003Cli\u003EInternational Environment\u003C/li\u003E \u003Cli\u003EWorking on the latest tech for the Insurtech Market Leader\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EAbout Us\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EAt CoverGo, our mission is to empower all insurance companies to make insurance 100% digital and accessible to everyone.\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EWe are a leading global no-code insurance platform for health, life, and P&amp;C\u003C/li\u003E \u003Cli\u003EWe’re the winner of the Insurtech of the Year in all of Asia and other awards globally\u003C/li\u003E \u003Cli\u003EWe work with insurance enterprise clients such as AXA, Bupa, MSIG, Dai-ichi, Bank of China Group Insurance, and many more\u003C/li\u003E \u003Cli\u003EWe're an international, diverse team of over 120 people with 30 nationalities and team members working remotely from all over the world\u003C/li\u003E \u003Cli\u003EWe are fully funded and backed by reputable VC funds and strategic institutional investors\u003C/li\u003E \u003Cli\u003EWe have a global presence in Asia, EMEA and the Americas\u003C/li\u003E \u003Cli\u003EWe’ve grown our annualized revenue by over 30x since January 2021\u003C/li\u003E \u003Cli\u003EWe’re constantly working towards making CoverGo a workplace that you love coming to. We deeply believe that bringing together a diversity of thoughts, expressions, and perspectives is key to building the best culture for equally diverse communities all over the world\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EWhat You Will Do\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDesign, implement and maintain new features and functionalities for the SAAS platform, understanding the requirements of insurance businesses and translating them into scalable and efficient software solutions\u003C/li\u003E \u003Cli\u003EWork on both the front-end and back-end of the application, demonstrating expertise in various technologies, frameworks, and programming languages\u003C/li\u003E \u003Cli\u003EWork collaboratively with product, design, engineering teams, and UX designers to understand end-user requirements, use cases, and technical concepts, translating them into a cohesive and effective solution while ensuring a seamless user experience.\u003C/li\u003E \u003Cli\u003EOptimize the performance of the application to handle large amounts of data and high user traffic, delivering a smooth user experience\u003C/li\u003E \u003Cli\u003EParticipate in code reviews and enforce best coding practices, while also writing and executing unit tests and integration tests to maintain code quality\u003C/li\u003E \u003Cli\u003EInvestigate and promptly fix bugs to maintain the reliability of the platform\u003C/li\u003E \u003Cli\u003EEnsure security and compliance by following best practices for securing web applications and adhering to relevant regulations in handling sensitive customer data\u003C/li\u003E \u003Cli\u003EStay up-to-date with the latest technologies, frameworks, and best practices to ensure we remain competitive and innovative \u003C/li\u003E \u003Cli\u003EDesign the platform with scalability and flexibility in mind, accommodating new features and changes as the number of clients and users grows\u003C/li\u003E \u003Cli\u003EProvide mentorship to junior developers, aiding in their technical growth and effective contribution to the team's goals\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EWhat We Need\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EProven experience 6 years as a Full Stack Engineer, working on complex SAAS applications\u003C/li\u003E \u003Cli\u003EStrong technical background with proficiency in front-end and back-end technologies, such as JavaScript, Vue, .NET Core, C#, GraphQL, MongoDB, Docker\u003C/li\u003E \u003Cli\u003EFamiliarity with cloud platforms like AWS, Azure, or Google Cloud for building scalable applications\u003C/li\u003E \u003Cli\u003EThorough understanding and practical experience with Test-Driven Development (TDD) to ensure robust and well-tested code\u003C/li\u003E \u003Cli\u003EExperience with unit, integration and function testing using front-end and back-end testing libraries\u003C/li\u003E \u003Cli\u003EProficiency in Domain-Driven Design (DDD) principles to create a maintainable and modular architecture that aligns with business domains\u003C/li\u003E \u003Cli\u003EIn-depth knowledge of web security best practices and experience in ensuring compliance with industry regulations\u003C/li\u003E \u003Cli\u003EDemonstrated experience in performance optimization for high-traffic web applications\u003C/li\u003E \u003Cli\u003EExperience with container technologies like docker and good understanding of cloud infrastructure and solutions.\u003C/li\u003E \u003Cli\u003EExperience with agile development methodologies and collaborating with cross-functional teams\u003C/li\u003E \u003Cli\u003EExcellent problem-solving skills and a proactive approach to troubleshooting and bug fixing\u003C/li\u003E \u003Cli\u003EStrong communication skills to effectively interact with both technical and non-technical team members with diverse backgrounds\u003C/li\u003E \u003Cli\u003EA passion for staying updated with the latest trends, technologies, and best practices in software development\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EWhy You'll Love Working Here\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003ECompetitive renumeration package\u003C/li\u003E \u003Cli\u003EInternational Environment\u003C/li\u003E \u003Cli\u003EHybrid work mode for those in Ho Chi Minh City; Remote for those outside Ho Chi Minh City\u003C/li\u003E \u003Cli\u003E15 days annual leave\u003C/li\u003E \u003Cli\u003E13th-Month Pay\u003C/li\u003E \u003Cli\u003EAnnual Performance Bonus\u003C/li\u003E \u003Cli\u003EStock Options after 6 months\u003C/li\u003E \u003Cli\u003ECompany activities and events\u003C/li\u003E \u003Cli\u003ELearning and development plan\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003ECoverGo Company\u003C/strong\u003E\u003Ca href=\"https://www.youtube.com/watch?v=YI0ezLxvFvA\" rel=\"nofollow noreferrer noopener\"\u003E\u003Cstrong\u003E Video\u003C/strong\u003E\u003C/a\u003E\u003C/p\u003E\u003Cp\u003EBy submitting your application, you confirm that you have read, understood, and accepted the content of CoverGo’s \u003Ca href=\"https://apply.workable.com/covergo/gdpr_policy?lng=en\" target=\"_blank\" rel=\"nofollow noreferrer noopener\"\u003EPrivacy Notice\u003C/a\u003E and you consent to the processing of your data as part of this application.\u003C/p\u003E\u003Cp\u003E\u003Ca href=\"https://www.youtube.com/watch?v=YI0ezLxvFvA\" rel=\"nofollow noreferrer noopener\"\u003E\u003C/a\u003E\u003C/p\u003E",
+        "socialSharingDescription": "Top 3 Reasons To Join Us Competitive Salary International Environment Working on the latest tech for the Insurtech Market Leader About UsAt CoverGo, our mission is to empower all insurance companies to make insurance 100% digital and accessible to ever...",
+        "employmentType": "Full-time",
+        "benefitsSection": "",
+        "requirementsSection": "",
+        "url": "https://jobs.workable.com/view/xxaKstHHMgHfsDysnYDgMD/remote-senior-full-stack-engineer-(.net-%26-vue%2Freact)-in-ho-chi-minh-city-at-covergo",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "Ho Chi Minh City, Ho Chi Minh City, Vietnam"
+        ],
+        "location": {
+          "city": "Ho Chi Minh City",
+          "subregion": "Ho Chi Minh City",
+          "countryName": "Vietnam"
+        },
+        "created": "2025-03-28T00:00:00.000Z",
+        "updated": "2025-03-28T00:00:00.000Z",
+        "company": {
+          "id": "b96d2892-eef5-42c0-9d80-9d3fc76cbada",
+          "title": "CoverGo",
+          "website": "https://covergo.com/",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/454850/logo",
+          "description": "\u003Cp\u003ECoverGo is a leading provider of cutting-edge technology to the insurance industry. Since 2017, CoverGo supplies insurance enterprise software solutions to insurers, MGAs, brokers and bancassurance in Asia and beyond.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E\u003Cem\u003EWhat makes CoverGo a great company?\u003C/em\u003E\u003C/strong\u003E We believe in putting people first and embrace an inclusive culture that supports a diverse group of top talents from around the world.\u003C/p\u003E\u003Cul\u003E\n\u003Cli\u003E\n\u003Cstrong\u003EAttractive Package: \u003C/strong\u003EWe understand that attracting top talent starts with providing the right package, therefore we offer competitive remuneration, incentives, and leave days to properly motivate and reward the great work of our team members.\u003C/li\u003E\n\u003Cli\u003E\n\u003Cstrong\u003ERemote or Office: \u003C/strong\u003EWork from wherever you feel most comfortable and productive. CoverGo offers the possibility to work fully remote, or to work in one of our top notch and centrally located offices in Hong Kong, Ho Chi Minh and Singapore.\u003C/li\u003E\n\u003Cli\u003E\n\u003Cstrong\u003EGrowth Opportunities: \u003C/strong\u003EStriving in a fast growing industry, and being a market leader, CoverGo provides the resources and tools for team members to learn and grow. We offer a clear career path, with rewarding promotion opportunities for top performers.\u003C/li\u003E\n\u003Cli\u003E\n\u003Cstrong\u003ETeam Offsites: \u003C/strong\u003EBuilding a strong and creative team spirit is key to success. CoverGo gathers monthly for fun team bonding activities, and rewards all team with yearly unforgettable incentive company trips to most exotic locations.\u003C/li\u003E\n\u003Cli\u003E\n\u003Cstrong\u003EShare Options: \u003C/strong\u003EAs an additional way to motivate and reward team members for great teamwork leading to the rapidly growing success of CoverGo, we provide an attractive employee stock ownership plan for all staff.\u003C/li\u003E\n\u003Cli\u003E\n\u003Cstrong\u003EMedical Insurance: \u003C/strong\u003EWe value the well being and health of all team members. Healthy body, healthy mind, so CoverGo provides a comprehensive medical insurance to staff members.\u003C/li\u003E\n\u003C/ul\u003E\u003Cp\u003E\u003Cstrong\u003EJOIN OUR TEAM NOW! \u003C/strong\u003EAnd work with a team of insurance technology experts on the forefront of changing the insurance industry.\u003C/p\u003E\u003Cp\u003EBy submitting your application, you confirm that you have read, understood, and accepted the content of CoverGo’s \u003Ca target=\"_blank\" href=\"https://apply.workable.com/covergo/gdpr_policy?lng=en\" rel=\"nofollow noreferrer noopener\"\u003EPrivacy Notice\u003C/a\u003E and you consent to the processing of your data as part of this application.\u003Cbr /\u003E\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/oU3jLouJUSRCiX8fbCWKF9/jobs-at-covergo",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/454850/social",
+          "socialSharingDescription": "CoverGo is a leading provider of cutting-edge technology to the insurance industry. Since 2017, CoverGo supplies insurance enterprise software solutions to insurers, MGAs, brokers and bancassurance in Asia and beyond."
+        },
+        "workplace": "remote"
+      },
+      {
+        "id": "c2f8ea71-885c-4cfe-9872-e98ddb1c8307",
+        "title": "Lead UI Engineer (React)",
+        "state": "published",
+        "description": "\u003Cp\u003EJoin our fast-growing consulting team, where innovation meets high-impact engineering. We're looking for an experienced Lead UI (React) Engineer who’s passionate about delivering modern, scalable web applications and leading high-performing teams in a dynamic, client-facing environment.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EThis role combines hands-on engineering excellence with leadership responsibilities, offering the opportunity to shape large-scale platforms used by millions and mentor the next generation of engineers.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E🔧 Key Responsibilities\u003C/p\u003E\u003Cp\u003ELead the architecture, design, development, and testing of modern UI applications using React, TypeScript, Redux.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EOwn end-to-end delivery for client projects, including architectural reviews, solution planning, and stakeholder presentations.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EBuild and maintain design system component libraries that scale across enterprise products.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EWork in Agile/Scrum teams, delivering incremental value in fast-paced sprints.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EDrive best practices in UI performance, accessibility, and responsive design.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EPartner with clients, product owners, and internal teams to shape outcomes aligned with business goals.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EMentor junior engineers, conduct interviews, and contribute to InRhythm’s engineering community via tech talks, workshops, and thought leadership.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EParticipate in technical pre-sales discussions, solutioning, and architectural planning.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E✅ Key Requirements\u003C/p\u003E\u003Cp\u003E8+ years of enterprise-level front-end development experience.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E6+ years hands-on experience in React and Redux.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E5+ years of solid TypeScript and JavaScript development experience.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EExpertise in HTML, CSS, SASS, RESTful APIs, and cross-browser compatibility.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EExperience with performance tuning, server-side rendering, GraphQL, and Websockets.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EExposure to CI/CD pipelines, unit/integration testing, and automation tools.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EProficient in containerization tools like Docker/Kubernetes.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EAbility to translate business needs into detailed technical designs and architecture diagrams.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EStrong communication and leadership skills; experience interacting with both technical and non-technical stakeholders.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EPrior experience in consulting or client-facing roles is a plus.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E💡 Nice to Have\u003C/p\u003E\u003Cp\u003EFamiliarity with cryptography in frontend applications.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EExperience working with design language systems and component-based libraries.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EPrior experience working with global teams across time zones.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E🏢 Work Setup &amp; Location\u003C/p\u003E\u003Cp\u003ELocation: Pune, Maharashtra (Yerwada – Nagar Road)\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EMode: Hybrid (3 days/week from office)\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EShift Timing: 2:00 PM – 11:00 PM IST (IMPORTANT – US overlap)\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EInterview Process: 2–3 technical rounds with US-based panel\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003ERelocation Support: Not provided\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E📌 Other Details\u003C/p\u003E\u003Cp\u003EOnly Pune-based candidates will be considered.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003ECandidates must have stable work history (no frequent job changes).\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EImmediate joiners only (or within 15 days max).\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E",
+        "socialSharingDescription": "Join our fast-growing consulting team, where innovation meets high-impact engineering. We&#39;re looking for an experienced Lead UI (React) Engineer who’s passionate about delivering modern, scalable web applications and leading high-performing teams i...",
+        "employmentType": "Full-time",
+        "benefitsSection": "",
+        "requirementsSection": "",
+        "url": "https://jobs.workable.com/view/q5pHhgNaPaMem3RBduxceR/hybrid-lead-ui-engineer-(react)-in-pune-at-umanist-staffing-llc",
+        "language": "en",
+        "locations": [
+          "Pune, Maharashtra, India"
+        ],
+        "location": {
+          "city": "Pune",
+          "subregion": "Maharashtra",
+          "countryName": "India"
+        },
+        "created": "2025-06-26T00:00:00.000Z",
+        "updated": "2025-06-26T00:00:00.000Z",
+        "company": {
+          "id": "5b87cd6a-528b-43e9-9dec-c52ce6747b14",
+          "title": "Umanist Staffing LLC",
+          "website": "https://umaniststaffing.com/",
+          "description": "",
+          "url": "https://jobs.workable.com/company/cixRKyVEV4ZAy9jHtnvCVb/jobs-at-umanist-staffing-llc"
+        },
+        "workplace": "hybrid"
+      },
+      {
+        "department": "PHP",
+        "id": "79a9c330-b692-44c5-bbcd-ea97534b9769",
+        "title": "1943 | Senior PHP+React Engineer",
+        "state": "published",
+        "description": "\u003Cp\u003EIntetics Inc., a leading American technology company specializing in custom software application development, distributed professional teams creation, software product quality assessment, and “all-things-digital” solutions, is looking for a Senior PHP Engineer to join its innovative team.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EResponsibilites:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDesign, develop, and maintain core features a platform for managing and annotating data, ensuring high performance, scalability, and reliability.\u003C/li\u003E \u003Cli\u003ECollaborate with product managers, UX/UI designers, and other developers.\u003C/li\u003E \u003Cli\u003EImplement and optimize user interface, develop and maintain APIs and backend services that support real-time collaboration, task management, and data processing.\u003C/li\u003E \u003Cli\u003EIntegrate existing machine learning models into the annotation workflow to support automation.\u003C/li\u003E \u003Cli\u003EEstimate feature complexity and implementation effort, contributing to sprint planning and roadmap discussions.\u003Cbr /\u003E \u003C/li\u003E \u003Cli\u003EMonitor system performance, diagnose issues, and implement improvements based on user feedback and analytics.\u003C/li\u003E \u003Cli\u003EParticipate in code reviews, maintain technical documentation, and follow best practices in software development.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Intetics Inc., a leading American technology company specializing in custom software application development, distributed professional teams creation, software product quality assessment, and “all-things-digital” solutions, is looking for a&amp;nbsp;Se...",
+        "employmentType": "",
+        "benefitsSection": "",
+        "requirementsSection": "\u003Cp\u003ERequired:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EStrong experience in React and PHP.\u003C/li\u003E \u003Cli\u003EKnowledge of MongoDB.\u003C/li\u003E \u003Cli\u003EProficient in using Docker for application containerization.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EBig plus if the candidate has:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EExtensive experience with web canvas, including creating web-based graphic editors, or similar experience (e.g., web-based CAD application development).\u003C/li\u003E \u003Cli\u003EBasic knowledge of Computer Vision.\u003C/li\u003E \u003Cli\u003EKnowledge of algorithms and data structures in graphics contexts.\u003C/li\u003E \u003Cli\u003EPrior experience with C++ for performance optimization.\u003C/li\u003E \u003Cli\u003EKnowledge of Python or Node.js.\u003C/li\u003E \u003Cli\u003EKnowledge of Linux.\u003C/li\u003E \u003Cli\u003EExperience in working with point clouds and related algorithms.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/g2mZJ5hoSMGvt2BBXU8dED/remote-1943-%7C-senior-php%2Breact-engineer-in-ukraine-at-intetics",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "Ukraine"
+        ],
+        "location": {
+          "city": "",
+          "subregion": null,
+          "countryName": "Ukraine"
+        },
+        "created": "2025-06-26T00:00:00.000Z",
+        "updated": "2025-06-26T00:00:00.000Z",
+        "company": {
+          "id": "7eb61613-c08d-41d3-9664-0f875e833fb5",
+          "title": "Intetics",
+          "website": "http://intetics.com",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/554738/logo",
+          "description": "\u003Cp\u003EIntetics Inc. is a leading American technology company providing custom software application development, distributed professional teams creation, software product quality assessment, and “all-things-digital” solutions built with SMAC, RPA, AI/ML, IoT, blockchain, and GIS/UAV/LBS technologies.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/gDvZSRWtedxcHZawvZWQAz/jobs-at-intetics",
+          "socialSharingDescription": "Intetics Inc. is a leading American technology company providing custom software application development, distributed professional teams creation, software product quality assessment, and “all-things-digital” solutions built with SMAC, RPA, AI/ML, IoT,..."
+        },
+        "workplace": "remote"
+      },
+      {
+        "id": "4d2d001f-7b5e-4d42-968d-e8aabe76af0a",
+        "title": "Senior Fullstack Developer ( Express.js / React )",
+        "state": "published",
+        "description": "\u003Cp\u003E99x Brazil is looking for a Senior Fullstack Developer proficient in Express.js and React. With over a decade of experience in delivering innovative tech solutions to clients in North America and Europe, we are committed to excellence and empowering its team with the latest technologies.\u003C/p\u003E\u003Cp\u003EAs a Senior Fullstack Developer, you will take on a pivotal role in the development and maintenance of our web applications. You will collaborate with a talented team of software engineers and designers to build scalable, high-performance solutions that meet user needs. Your expertise will guide the team towards best practices in design, development, and deployment, fostering an environment of continuous improvement.\u003C/p\u003E\u003Cp\u003E  \u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Ch3\u003EResponsibilities\u003C/h3\u003E\u003Cul\u003E \u003Cli\u003EDesign and develop robust web applications using Express.js for backend services and React for frontend interfaces.\u003C/li\u003E \u003Cli\u003ELead the technical direction and architecture of projects, ensuring scalability and maintainability.\u003C/li\u003E \u003Cli\u003EPerform code reviews, provide mentorship, and promote best coding practices within the team.\u003C/li\u003E \u003Cli\u003ECollaborate with cross-functional teams to define project requirements and translate them into technical specifications.\u003C/li\u003E \u003Cli\u003ETroubleshoot and resolve performance issues and bugs in a timely manner.\u003C/li\u003E \u003Cli\u003EStay current with industry trends and emerging technologies to ensure the team is using the best tools and practices.\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "99x Brazil is looking for a Senior Fullstack Developer proficient in Express.js and React. With over a decade of experience in delivering innovative tech solutions to clients in North America and Europe, we are committed to excellence and empowering it...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cul\u003E \u003Cli\u003EYour pick when it comes to employment models: CLT/PJ/Cooperativa;\u003C/li\u003E \u003Cli\u003EWe provide resources for you to grow and learn on the job, including online courses, mentoring, and the latest gen laptops;\u003C/li\u003E \u003Cli\u003EA fully remote work environment with flexible working hours;\u003C/li\u003E \u003Cli\u003EBonus for any referrals that we end up hiring;\u003C/li\u003E \u003Cli\u003EA good base salary and bonuses for outstanding performance.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003Cbr /\u003E\u003C/p\u003E",
+        "requirementsSection": "\u003Cul\u003E \u003Cli\u003EBachelor's degree in Computer Science or related field.\u003C/li\u003E \u003Cli\u003E5+ years of experience in software development, with a strong focus on Fullstack development.\u003C/li\u003E \u003Cli\u003EProficiency in Express.js and React, with a solid understanding of Node.js.\u003C/li\u003E \u003Cli\u003ERelevant experience in MongoDB and PostgreSQL \u003C/li\u003E \u003Cli\u003EExperience with CI/CD \u003C/li\u003E \u003Cli\u003EStrong analytical and problem-solving skills.\u003C/li\u003E \u003Cli\u003EAdvanced skills in English, both written and verbal.\u003C/li\u003E \u003Cli\u003EAbility to work collaboratively in a fast-paced, agile environment.\u003C/li\u003E \u003Cli\u003EExperience leading teams or projects is a plus.\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/awJUk7tMZoYWnUB3Z2bibA/remote-senior-fullstack-developer-(-express.js-%2F-react-)-in-s%C3%A3o-paulo-at-99x-brazil-(formerly-nextly)",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "São Paulo, State of São Paulo, Brazil"
+        ],
+        "location": {
+          "city": "São Paulo",
+          "subregion": "State of São Paulo",
+          "countryName": "Brazil"
+        },
+        "created": "2025-06-25T00:00:00.000Z",
+        "updated": "2025-06-25T00:00:00.000Z",
+        "company": {
+          "id": "b297ac32-7847-4047-bbd0-50adbfa8486c",
+          "title": "99x Brazil (formerly Nextly)",
+          "website": "https://99x.io/brazil/en",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/517614/logo",
+          "description": "\u003Cp\u003E#1 Top Software Development Company in Brazil by Clutch, 99 Americas is a team of +60 software engineers, designers, and makers that have been working together for over 10 years building scalable tech solutions for companies in North America and Europe. \u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/o46v8cTo8oqXp2WFZKR6o5/jobs-at-99x-brazil-(formerly-nextly)",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/517614/social",
+          "socialSharingDescription": "#1 Top Software Development Company in Brazil by Clutch, 99x Americas is a team of +60 software engineers, designers, and makers that have been working together for over 10 years building scalable tech solutions for companies in North America and Europe. "
+        },
+        "workplace": "remote"
+      },
+      {
+        "department": "IT",
+        "id": "f3a4df8b-a028-487b-86fb-27f033996bc7",
+        "title": "React Native Web Developer",
+        "state": "published",
+        "description": "\u003Ch3\u003E\u003Cstrong\u003EAbout the Role:\u003C/strong\u003E\u003C/h3\u003E\u003Cp\u003EWe are seeking a \u003Cstrong\u003ESenior React Native Web Developer\u003C/strong\u003E with \u003Cstrong\u003E5+ years of professional experience\u003C/strong\u003E in cross-platform development. You will lead the design and development of scalable, performant applications for both \u003Cstrong\u003Emobile\u003C/strong\u003E and \u003Cstrong\u003Eweb\u003C/strong\u003E using \u003Cstrong\u003EReact Native\u003C/strong\u003E and \u003Cstrong\u003EReact Native for Web\u003C/strong\u003E. This is a hands-on development role ideal for someone who thrives in a fast-paced, agile environment.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Ch3\u003E\u003Cstrong\u003EKey Responsibilities:\u003C/strong\u003E\u003C/h3\u003E\u003Cul\u003E \u003Cli\u003E Design, develop, and maintain high-quality applications using \u003Cstrong\u003EReact Native\u003C/strong\u003E and \u003Cstrong\u003EReact Native Web\u003C/strong\u003E. \u003C/li\u003E \u003Cli\u003E Build responsive and adaptive UIs that deliver a seamless experience across mobile and web platforms. \u003C/li\u003E \u003Cli\u003E Collaborate with cross-functional teams including design, backend, and QA to ship features on time. \u003C/li\u003E \u003Cli\u003E Architect modular, reusable code and lead code reviews to maintain high standards. \u003C/li\u003E \u003Cli\u003E Debug, test, and optimize code for performance and scalability. \u003C/li\u003E \u003Cli\u003E Mentor junior developers and contribute to architectural decisions. \u003C/li\u003E \u003Cli\u003E Stay updated with the latest trends and best practices in mobile and web development. \u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "About the Role:We are seeking a Senior React Native Web Developer with 5+ years of professional experience in cross-platform development. You will lead the design and development of scalable, performant applications for both mobile and web using React ...",
+        "employmentType": "Full-time",
+        "benefitsSection": "",
+        "requirementsSection": "\u003Cul\u003E \u003Cli\u003E \u003Cstrong\u003E5+ years of experience\u003C/strong\u003E in front-end development, with at least \u003Cstrong\u003E3+ years in React Native\u003C/strong\u003E. \u003C/li\u003E \u003Cli\u003E Hands-on experience with \u003Cstrong\u003EReact Native for Web\u003C/strong\u003E or frameworks like \u003Cstrong\u003EExpo for Web\u003C/strong\u003E. \u003C/li\u003E \u003Cli\u003E Strong expertise in \u003Cstrong\u003EJavaScript (ES6+), TypeScript\u003C/strong\u003E, \u003Cstrong\u003EHTML5\u003C/strong\u003E, and \u003Cstrong\u003ECSS3\u003C/strong\u003E. \u003C/li\u003E \u003Cli\u003E Proficiency with \u003Cstrong\u003Estate management libraries\u003C/strong\u003E such as Redux, MobX, or Zustand. \u003C/li\u003E \u003Cli\u003E Experience working with \u003Cstrong\u003EREST APIs\u003C/strong\u003E and third-party integrations. \u003C/li\u003E \u003Cli\u003E Strong understanding of responsive design, cross-browser compatibility, and accessibility. \u003C/li\u003E \u003Cli\u003E Familiarity with \u003Cstrong\u003ECI/CD tools\u003C/strong\u003E, \u003Cstrong\u003EGit\u003C/strong\u003E, and Agile methodologies. \u003C/li\u003E \u003C/ul\u003E\u003Cul\u003E \u003Cli\u003E Experience with \u003Cstrong\u003ENext.js\u003C/strong\u003E, \u003Cstrong\u003EExpo\u003C/strong\u003E, or \u003Cstrong\u003EPWAs\u003C/strong\u003E. \u003C/li\u003E \u003Cli\u003E Familiarity with native modules and bridging (Android/iOS). \u003C/li\u003E \u003Cli\u003E UI/UX experience or ability to work closely with designers. \u003C/li\u003E \u003Cli\u003E Exposure to testing frameworks like \u003Cstrong\u003EJest\u003C/strong\u003E, \u003Cstrong\u003EDetox\u003C/strong\u003E, or \u003Cstrong\u003EReact Testing Library\u003C/strong\u003E. \u003C/li\u003E \u003Cli\u003E Experience leading projects or mentoring teams.\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/w5ZZuojahDsnGjetYcLnwX/react-native-web-developer-in-riyadh-at-tawantech",
+        "language": "en",
+        "locations": [
+          "Riyadh, Riyadh Province, Saudi Arabia"
+        ],
+        "location": {
+          "city": "Riyadh",
+          "subregion": "Riyadh Province",
+          "countryName": "Saudi Arabia"
+        },
+        "created": "2025-06-25T00:00:00.000Z",
+        "updated": "2025-06-25T00:00:00.000Z",
+        "company": {
+          "id": "bcbd427e-8a6f-4291-a81e-44ffcc00d08a",
+          "title": "TAWANTECH",
+          "website": "https://www.tawantech.sa/index.html",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/660099/logo",
+          "description": "\u003Cp\u003EWe are TAWANTECH, a dynamic and innovative company that specializes in financial technology solutions and services,with a team of passionate professionals and a commitment to excellence, we are dedicated to delivering exceptional solutions that meet the unique needs of our clients.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/piLvdXFhcyDhza9LCgay1S/jobs-at-tawantech",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/660099/social",
+          "socialSharingDescription": "We are TAWANTECH, a dynamic and innovative company that specializes in financial technology solutions and services,with a team of passionate professionals and a commitment to excellence, we are dedicated to delivering exceptional solutions that meet th..."
+        },
+        "workplace": "on_site"
+      },
+      {
+        "department": "Vizrt R&D",
+        "id": "94be2de2-5216-48ed-b83d-e9c46a32c32a",
+        "title": "Senior Frontend Engineer (React)",
+        "state": "published",
+        "description": "\u003Cp\u003EAs a Senior Frontend Engineer, you’ll lead development of cutting-edge web applications, focusing on usability, performance, and visual excellence. You’ll collaborate closely with designers, backend engineers, and product managers. This is a chance to influence both user experience and front-end architecture on a scale, working in a supportive, remote-first team. \u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Ch3\u003EKey Responsibilities \u003C/h3\u003E\u003Cul\u003E \u003Cli\u003EArchitect, develop, and maintain scalable front-end applications using React and modern JavaScript/TypeScript\u003C/li\u003E \u003Cli\u003ETranslate complex business and design requirements into intuitive, high-performance user interfaces with meticulous attention to detail\u003C/li\u003E \u003Cli\u003ECollaborate closely with design and UX teams to deliver visually stunning and seamless user experiences\u003C/li\u003E \u003Cli\u003EDrive optimization for speed, reliability, and scalability across applications\u003C/li\u003E \u003Cli\u003EMentor and upskill team members through code reviews and by promoting front-end engineering best practices\u003C/li\u003E \u003Cli\u003ELead architectural decisions related to state management, routing, modular component libraries, and overall front-end strategy\u003C/li\u003E \u003Cli\u003EChampion modern automated testing frameworks (Jest, Testing Library, Cypress, Vitest) and streamline CI/CD workflows for rapid, reliable delivery\u003C/li\u003E \u003Cli\u003EProactively research and adopt emerging technologies and advocate for continuous improvement across the front-end organization\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "As a Senior Frontend Engineer, you’ll lead development of cutting-edge web applications, focusing on usability, performance, and visual excellence. You’ll collaborate closely with designers, backend engineers, and product managers. This is a chance to ...",
+        "employmentType": null,
+        "benefitsSection": "\u003Cp\u003EAcross Vizrt, we all work with our shared purpose in mind; to deliver more stories, better told. That is because we believe that stories have the power to impact not just the audience, but the teller as well. A well-crafted and well-delivered story can change the world. We strive and innovate to deliver the best software-defined visual storytelling tools to the world’s storytellers across broadcast, media, public service, enterprise, not-for-profit, education, health, houses of worship, in fact wherever there is a need to educate, entertain or inform. Because that is what stories do, it is why they are important. \u003C/p\u003E\u003Cp\u003E4 billion humans see the stories that our customers tell every day. So, for us diversity is not an optional objective, it is a simple reality. Our customers’ customers are diverse, our customers are diverse, Vizrt gains strength from being diverse. \u003C/p\u003E\u003Cp\u003EIt is true that we hold our diversity to be essential, it is something we constantly nourish and pay attention to, but it is not something we take for granted. We do not tolerate discrimination or harassment. We champion inclusion and we value each other’s stories, and we relish their telling.\u003C/p\u003E\u003Cp\u003EWe offer a comprehensive benefits package that includes:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EHealth Insurance: Comprehensive medical, dental, and vision insurance plans to keep you and your family healthy\u003C/li\u003E \u003Cli\u003EPaid Time Off: Generous vacation days, sick leave, and holidays to ensure you have a work-life balance\u003C/li\u003E \u003Cli\u003EProfessional Development: Opportunities for ongoing training\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003EJoin our team and take advantage of these benefits while working in a dynamic and supportive environment.\u003C/p\u003E\u003Ch3\u003E\u003Cstrong\u003ERecruitment Process   \u003C/strong\u003E\u003C/h3\u003E\u003Cul\u003E \u003Cli\u003ERecruiter Screening \u003C/li\u003E \u003Cli\u003ETeam Interview \u003C/li\u003E \u003Cli\u003ETech Interview\u003C/li\u003E \u003Cli\u003EFinal Interview \u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E",
+        "requirementsSection": "\u003Cul\u003E \u003Cli\u003E5+ years of professional experience building front-end applications using React\u003C/li\u003E \u003Cli\u003EMastery of React ecosystem (Hooks, Context API, Redux or similar state management, etc)\u003C/li\u003E \u003Cli\u003EExpertise in JavaScript and TypeScript\u003C/li\u003E \u003Cli\u003EDeep knowledge of HTML5, CSS3 (SASS, CSS-in-JS, styled-components), responsive design, and accessibility (a11y)\u003C/li\u003E \u003Cli\u003EExperience integrating with REST APIs\u003C/li\u003E \u003Cli\u003EFamiliarity with frontend tooling: Webpack, Babel, Vite, or similar\u003C/li\u003E \u003Cli\u003EUnderstanding performance optimization, security, and cross-browser compatibility\u003C/li\u003E \u003Cli\u003EEffective communicator, self-driven, and productive in a remote/distributed team\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Ch3\u003ENice to Have \u003C/h3\u003E\u003Cul\u003E \u003Cli\u003EExpertise in animation libraries (Framer Motion, GSAP)\u003C/li\u003E \u003Cli\u003EContributions to open-source React projects\u003C/li\u003E \u003Cli\u003EExposure to backend concepts (Node.js, API design, cloud functions)\u003C/li\u003E \u003Cli\u003EExposure to the broadcasting industry\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/jniXihBNZqHUwR1eMuhXYw/remote-senior-frontend-engineer-(react)-in-portugal-at-vizrt",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "Portugal"
+        ],
+        "location": {
+          "city": "",
+          "subregion": null,
+          "countryName": "Portugal"
+        },
+        "created": "2025-06-25T00:00:00.000Z",
+        "updated": "2025-06-25T00:00:00.000Z",
+        "company": {
+          "id": "b644f4d9-97de-4c5e-be86-b66ef93373f7",
+          "title": "Vizrt",
+          "website": "https://www.vizrt.com/",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/579439/logo",
+          "description": "",
+          "url": "https://jobs.workable.com/company/ovqToN2jqZ4DmyNTL7FtHH/jobs-at-vizrt"
+        },
+        "workplace": "remote"
+      },
+      {
+        "department": "Application Innovation",
+        "id": "7aa91277-9808-40c3-a808-3b14a60539ef",
+        "title": "Senior Front-end Developer (React Material/React Redux + Python)",
+        "state": "published",
+        "description": "\u003Cp\u003EOZ Digital LLC is on the lookout for a Senior Front-End Developer with expertise in React Material or React Redux, along with a strong understanding of Python. In this role, you will be responsible for designing and implementing user interfaces that are not only visually appealing but also functional and efficient. You will work closely with UX designers and backend developers to create seamless applications that meet client requirements. This position requires a proactive approach to problem-solving and the ability to mentor junior developers, ensuring that best practices are followed throughout the development process.\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EKey Responsibilities:\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDevelop and maintain high-quality front-end applications using React Material and/or React Redux.\u003C/li\u003E \u003Cli\u003ECollaborate with UX/UI designers and back-end developers to create a seamless user experience.\u003C/li\u003E \u003Cli\u003EUtilize Python to enhance front-end functionality and integrations.\u003C/li\u003E \u003Cli\u003ELead code reviews and provide mentorship to junior team members.\u003C/li\u003E \u003Cli\u003EImplement best practices for coding, debugging, and optimizing front-end performance.\u003C/li\u003E \u003Cli\u003EParticipate in the full software development lifecycle, including requirement analysis, design, development, integration, testing, and deployment.\u003C/li\u003E \u003Cli\u003EStay updated with the latest industry trends and technologies to continuously improve development practices and team dynamics.\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003ECandidate Profile\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EWe are seeking a senior-level developer with the following qualifications:\u003C/p\u003E\u003Cp\u003E· \u003Cstrong\u003ETechnical Skills:\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003Eo Proficiency in JavaScript, React Router, Python, and AWS.\u003C/p\u003E\u003Cp\u003Eo Familiarity with Kubernetes and Prism ORM is also required.\u003C/p\u003E\u003Cp\u003E· \u003Cstrong\u003EExperience:\u003C/strong\u003E Sufficient seniority to work independently, effectively troubleshoot complex issues, and confidently ask clarifying questions.\u003C/p\u003E\u003Cp\u003E· \u003Cstrong\u003ECommunication Skills:\u003C/strong\u003E Strong verbal and written communication skills are essential for collaborating remotely with team members, asking questions, and contributing effectively to discussions.\u003C/p\u003E",
+        "socialSharingDescription": "OZ Digital LLC is on the lookout for a Senior Front-End Developer with expertise in React Material or React Redux, along with a strong understanding of Python. In this role, you will be responsible for designing and implementing user interfaces that ar...",
+        "employmentType": "Full-time",
+        "benefitsSection": "",
+        "requirementsSection": "\u003Cp\u003E· 5+ years of experience in front-end development with a focus on React.js, React Material and/or React Redux.\u003C/p\u003E\u003Cp\u003E· Proficiency in Python and integrating front-end and back-end systems.\u003C/p\u003E\u003Cp\u003E· Experience implementing responsive web design and understanding of UI/UX principles.\u003C/p\u003E\u003Cp\u003E· Strong understanding of state management and data flow using Redux.\u003C/p\u003E\u003Cp\u003E· Familiarity with RESTful APIs and asynchronous programming.\u003C/p\u003E\u003Cp\u003E· Knowledge of version control systems (Git) for collaborative development.\u003C/p\u003E\u003Cp\u003E· Solid understanding of web performance optimization techniques.\u003C/p\u003E\u003Cp\u003E· Excellent problem-solving skills and the ability to work well in a team environment.\u003C/p\u003E\u003Cp\u003E· Strong communication skills in both written and spoken English.\u003C/p\u003E\u003Cp\u003E· Experience with Agile methodologies and familiarity with tools like JIRA or Trello is a plus.\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/g9vh223j6S32isDXgtbFNF/remote-senior-front-end-developer-(react-material%2Freact-redux-%2B-python)-in-argentina-at-oz-digital-llc",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "Argentina"
+        ],
+        "location": {
+          "city": "",
+          "subregion": null,
+          "countryName": "Argentina"
+        },
+        "created": "2025-06-24T00:00:00.000Z",
+        "updated": "2025-06-24T00:00:00.000Z",
+        "company": {
+          "id": "1ff450de-8c92-4cd5-bad6-8b1c9fa34a37",
+          "title": "OZ Digital LLC",
+          "website": "http://www.followoz.com",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/584499/logo",
+          "description": "\u003Cp\u003EWe are a leading consulting company whose services and solutions leverage Intelligent Automation to accelerate processes and provide detailed business insights. With specialties in data analytics, artificial intelligence (AI), robotic process automation (RPA), and more, our experts can enhance technology infrastructures to provide accurate reports, inform decision making, and improve customer satisfaction.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/4WRSJgLX4GW8ukYKrxiPcD/jobs-at-oz-digital-llc",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/584499/social",
+          "socialSharingDescription": "We are a leading consulting company whose services and solutions leverage Intelligent Automation to accelerate processes and provide detailed business insights. "
+        },
+        "workplace": "remote"
+      },
+      {
+        "department": "Engineering",
+        "id": "aa52768b-5b18-460b-8e60-69baa210c8ff",
+        "title": "Senior Full-Stack Engineer (React / .NET / Live Streaming eCommerce)",
+        "state": "published",
+        "description": "\u003Cp\u003EWe’re building the future of live streaming ecommerce—a bold, community-powered platform where creators can sell, connect, and grow in real time. We’re looking for a Senior Full-Stack Engineer who’s equally at home writing performant React UIs and scalable .NET APIs. If you thrive in fast-paced startup environments and want to work across real-time systems, live video streaming, GraphQL, and cloud-native tools—this is your shot.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E🔧 Tech Stack Highlights\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EYou’ll work across both frontend and backend systems. We don't expect you to know everything on day one—but deep expertise on one side and eagerness to grow on the other is a must.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EFrontend\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EReact 18 / Next.js (v14+)\u003C/li\u003E \u003Cli\u003EVercel (Edge Functions, SSR/ISR, PWA support)\u003C/li\u003E \u003Cli\u003EApollo Client + GraphQL Subscriptions\u003C/li\u003E \u003Cli\u003EAuth0, Redux Toolkit\u003C/li\u003E \u003Cli\u003EPusher.io for real-time updates\u003C/li\u003E \u003Cli\u003EAgora SDKs (RTC, RTM, Media Push)\u003C/li\u003E \u003Cli\u003EStripe, Scanbot SDK\u003C/li\u003E \u003Cli\u003EInternal component libraries with Storybook\u003C/li\u003E \u003Cli\u003EObservability: Datadog RUM &amp; logging\u003C/li\u003E \u003Cli\u003Ei18n with next-i18next / react-i18next\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003EBackend\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E.NET 8 / C# (Minimal APIs, background services)\u003C/li\u003E \u003Cli\u003EEntity Framework Core + PostgreSQL\u003C/li\u003E \u003Cli\u003EAzure (Blob Storage, Service Bus, Application Insights)\u003C/li\u003E \u003Cli\u003EGraphQL with HotChocolate\u003C/li\u003E \u003Cli\u003EAuth0, API Key Auth\u003C/li\u003E \u003Cli\u003EDapr for microservices and eventing\u003C/li\u003E \u003Cli\u003EStripe.NET, ShipEngine, Shippo, Plaid.NET, TaxJar\u003C/li\u003E \u003Cli\u003ECloudinary, Twilio, Geo.MapBox\u003C/li\u003E \u003Cli\u003EAutoMapper, Slugify, shortid\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E🎯 What You’ll Do\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EBuild and maintain end-to-end product features, from the frontend UI to backend services\u003C/li\u003E \u003Cli\u003EOwn critical flows across live shopping, seller onboarding, chat, and streaming experiences\u003C/li\u003E \u003Cli\u003ECollaborate with design, product, and DevOps to rapidly ship high-impact features\u003C/li\u003E \u003Cli\u003EImplement real-time capabilities: live chat, viewer count, notifications, and interactive tools\u003C/li\u003E \u003Cli\u003EEnsure scalability, performance, and security across the stack\u003C/li\u003E \u003Cli\u003EImprove observability and troubleshoot complex user journeys\u003C/li\u003E \u003Cli\u003EShape architecture and mentor engineers on best practices across the codebase\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "We’re building the future of live streaming ecommerce—a bold, community-powered platform where creators can sell, connect, and grow in real time. We’re looking for a Senior Full-Stack Engineer who’s equally at home writing performant React UIs and scal...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003E\u003Cstrong\u003E🌟 Why Join Us?\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EWe’re redefining what it means to sell live. As a small team with outsized ambition, we move fast, ship often, and take pride in what we build. You'll work on a product with real traction, influence both tech and strategy, and help shape the creator economy of tomorrow.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EHealth insurance\u003C/li\u003E \u003Cli\u003EPaid holidays\u003C/li\u003E \u003Cli\u003ERemote work flexibility (upon request)\u003C/li\u003E \u003Cli\u003EPowerful workstations\u003C/li\u003E \u003Cli\u003ESit/stand desks\u003C/li\u003E \u003Cli\u003EConvenient location &amp; free parking\u003C/li\u003E \u003C/ul\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003Cstrong\u003E🧠 You Should Have\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E5+ years of professional software engineering experience\u003C/li\u003E \u003Cli\u003EDeep expertise in either React/Next.js or .NET backend systems\u003C/li\u003E \u003Cli\u003ESolid experience working with GraphQL, REST APIs, and real-time messaging\u003C/li\u003E \u003Cli\u003EStrong foundation in cloud platforms (Azure preferred)\u003C/li\u003E \u003Cli\u003EPassion for clean code, performance, and developer experience\u003C/li\u003E \u003Cli\u003EExperience working with third-party APIs and complex integrations\u003C/li\u003E \u003Cli\u003EStrong communication skills and a collaborative, ownership-driven mindset\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003Cstrong\u003E💡 Bonus Points\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EExperience with live video or WebRTC (Agora a plus)\u003C/li\u003E \u003Cli\u003EBuilt a PWA or hybrid/native app\u003C/li\u003E \u003Cli\u003EFamiliarity with Kubernetes, Dapr, or event-driven microservices\u003C/li\u003E \u003Cli\u003EWorked in high-growth startups or shipped products 0→1\u003C/li\u003E \u003Cli\u003EFull-stack experience beyond your core strength\u003C/li\u003E \u003Cli\u003EContributions to open source or developer communities\u003C/li\u003E \u003Cli\u003Ei18n/localization experience\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/n2RZqnw8d9BaRUCtmvP1gR/senior-full-stack-engineer-(react-%2F-.net-%2F-live-streaming-ecommerce)-in-valley-view-at-jatango-llc",
+        "language": "en",
+        "locations": [
+          "Valley View, Ohio, United States"
+        ],
+        "location": {
+          "city": "Valley View",
+          "subregion": "Ohio",
+          "countryName": "United States"
+        },
+        "created": "2025-06-23T00:00:00.000Z",
+        "updated": "2025-06-23T00:00:00.000Z",
+        "company": {
+          "id": "4268ffe7-a978-4050-b338-c290bcd0f4e8",
+          "title": "Jatango LLC",
+          "website": "http://jatango.com",
+          "description": "",
+          "url": "https://jobs.workable.com/company/9cCRemGQDptk76jEBWkZ6b/jobs-at-jatango-llc"
+        },
+        "workplace": "on_site"
+      },
+      {
+        "id": "d1eabb75-0460-48c6-aa96-44aae3acaf0d",
+        "title": "Full Stack Developer (MS Access to Azure SQL Migration & React)",
+        "state": "published",
+        "description": "\u003Cp\u003EJob Description:\u003C/p\u003E\u003Cp\u003EWe are seeking an experienced Full Stack Developer to handle a database migration project from Microsoft Access SQL to Azure SQL, and support the existing React-based frontend. The ideal candidate should have strong experience in database structure, optimization, and UI integration using modern front-end technologies.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EKey Responsibilities:\u003C/p\u003E\u003Cp\u003E-Migrate existing data and schema from MS Access to Azure SQL.\u003C/p\u003E\u003Cp\u003E-Ensure data integrity, performance, and reliability post-migration.\u003C/p\u003E\u003Cp\u003E-Modify and maintain existing React code to integrate with the Azure SQL backend.\u003C/p\u003E\u003Cp\u003E-Use HTML and CSS for front-end enhancements and UI fixes.\u003C/p\u003E\u003Cp\u003E-Collaborate with internal teams to ensure successful project delivery.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E",
+        "socialSharingDescription": "Job Description:We are seeking an experienced Full Stack Developer to handle a database migration project from Microsoft Access SQL to Azure SQL, and support the existing React-based frontend. The ideal candidate should have strong experience in databa...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003ELocation: Remote (Work from Home)\u003C/p\u003E\u003Cp\u003ESchedule: Full-time | 9:00 AM – 5:00 PM EST (9:00 PM – 5:00 AM PH Time)\u003Cbr /\u003E\u003Cbr /\u003EHow to Apply:\u003C/p\u003E\u003Cp\u003ESend your CV and portfolio to: 📧 mondilla.jay03@gmail.com\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003ERequirements:\u003C/p\u003E\u003Cp\u003E-Proven experience in MS Access and Azure SQL database handling.\u003C/p\u003E\u003Cp\u003E-Proficiency in React, HTML, and CSS.\u003C/p\u003E\u003Cp\u003E-Prior experience with data migration and application modernization.\u003C/p\u003E\u003Cp\u003E-Strong attention to detail and problem-solving skills.\u003C/p\u003E\u003Cp\u003E-Ability to work independently and meet deadlines.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/rVrHk9dv1tD3zbDb9X2Uxx/remote-full-stack-developer-(ms-access-to-azure-sql-migration-%26-react)-in-philippines-at-remote-va",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "Philippines"
+        ],
+        "location": {
+          "city": "",
+          "subregion": null,
+          "countryName": "Philippines"
+        },
+        "created": "2025-06-24T00:00:00.000Z",
+        "updated": "2025-06-24T00:00:00.000Z",
+        "company": {
+          "id": "865dde2b-c8ad-4ebd-a694-42ae867e4c8d",
+          "title": "Remote VA",
+          "website": "http://remoteva.ph",
+          "description": "",
+          "url": "https://jobs.workable.com/company/hAm4mKC46gqpuMBQgskcuR/jobs-at-remote-va"
+        },
+        "workplace": "remote"
+      },
+      {
+        "department": "Software Development",
+        "id": "4bf7ebf9-7c2c-4e6a-911f-ba39571e9ae3",
+        "title": "Web Developer React JS",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003EProject-based 3-6 months, WFO Yogyakarta\u003C/strong\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDevelop and maintain scalable, reusable, and high-quality frontend components using React JS.\u003C/li\u003E \u003Cli\u003ETranslate UI/UX wireframes and mockups into responsive and efficient web interfaces.\u003C/li\u003E \u003Cli\u003EEnsure cross-browser compatibility, responsiveness, and performance of applications across devices.\u003C/li\u003E \u003Cli\u003EUtilize ES6+ features and TypeScript to write clean and maintainable code.\u003C/li\u003E \u003Cli\u003EWork with state management libraries such as Redux and integrate with RESTful APIs.\u003C/li\u003E \u003Cli\u003EParticipate in code reviews and ensure code quality through rigorous testing (unit, integration, etc.).\u003C/li\u003E \u003Cli\u003ECollaborate with backend developers, designers, and QA engineers to deliver seamless user experiences.\u003C/li\u003E \u003Cli\u003EFollow best practices in code versioning using Git/Bitbucket.\u003C/li\u003E \u003Cli\u003EContribute to technical documentation and continuous improvement of the codebase\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "Project-based 3-6 months, WFO Yogyakarta Develop and maintain scalable, reusable, and high-quality frontend components using React JS. Translate UI/UX wireframes and mockups into responsive and efficient web interfaces. Ensure cross-browser compatibili...",
+        "employmentType": "Contract",
+        "benefitsSection": "",
+        "requirementsSection": "\u003Cul\u003E \u003Cli\u003EMinimum 3 years of professional experience in frontend development\u003C/li\u003E \u003Cli\u003EProficiency in HTML, CSS, Javascript, Typescript, ES6, and React JS.\u003C/li\u003E \u003Cli\u003EFamiliarity with React Libraries, including Redux.\u003C/li\u003E \u003Cli\u003Experience in Source Control using Bitbucket/GIT.\u003C/li\u003E \u003Cli\u003EAbility to translate wireframes into high-quality code.\u003C/li\u003E \u003Cli\u003ECapacity to design components for reusability and optimal performance.\u003C/li\u003E \u003Cli\u003ECapability to create responsive designs.\u003C/li\u003E \u003Cli\u003EDeveloping and maintaining code that meets standards, ensuring high quality, efficiency, and an exceptional customer experience.\u003C/li\u003E \u003Cli\u003EWriting production-quality, rigorously tested code.\u003C/li\u003E \u003Cli\u003EWilling to work onsite in Yogyakarta.\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/ao6nAXhkURShGGyLoKZfzr/web-developer-react-js-in-yogyakarta-at-coding-collective",
+        "language": "en",
+        "locations": [
+          "Yogyakarta, Yogyakarta City, Indonesia"
+        ],
+        "location": {
+          "city": "Yogyakarta",
+          "subregion": "Yogyakarta City",
+          "countryName": "Indonesia"
+        },
+        "created": "2025-06-24T00:00:00.000Z",
+        "updated": "2025-06-24T00:00:00.000Z",
+        "company": {
+          "id": "d9e2bee4-80f5-4483-9692-501dfe618b11",
+          "title": "Coding Collective",
+          "website": "https://codingcollective.com/",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/698525/logo",
+          "description": "\u003Cp\u003E\u003Cstrong\u003ECoding Collective\u003C/strong\u003E is a tech company that develops high-quality, cost-effective talent across Southeast Asia while providing IT outsourcing, software development, and talent-as-a-service solutions to businesses globally.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/sUvXLJ8PL8o5PcjRSjSpWH/jobs-at-coding-collective",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/698525/social",
+          "socialSharingDescription": "Coding Collective is a tech company that develops high-quality, cost-effective talent across Southeast Asia while providing IT outsourcing, software development, and talent-as-a-service solutions to businesses globally."
+        },
+        "workplace": "on_site"
+      },
+      {
+        "department": "Pioneers",
+        "id": "54284081-9625-45aa-845c-744efda61fac",
+        "title": "Front-End Developer (React / GraphQL / HubSpot)",
+        "state": "published",
+        "description": "\u003Cp\u003E\u003Cstrong\u003EAbout Enroute:\u003C/strong\u003E\u003C/p\u003E\u003Cp\u003EWe love technology, and we enjoy what we do. We are always looking for innovation. We have social awareness and try to improve it daily. We make things happen. You can trust us. Our Enrouters are always up for a challenge. We ask questions, and we love to learn.\u003C/p\u003E\u003Cp\u003EWe pride ourselves on having great benefits and compensations, a fantastic work environment, flexible schedules, and policies that positively impact the balance of work and life outside of it. We care about who you are in the office and who you are as an individual. We get involved, we like to know our people, we want every Enrouter to become part of a great community of highly driven, responsible, respectful, and above all, happy people. We want you to enjoy working with us.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EWe are seeking a highly experienced who will:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EDevelop and maintain dynamic, responsive web applications using React and GraphQL.\u003C/li\u003E \u003Cli\u003ECollaborate with designers, marketers, and back-end engineers to build engaging customer-facing features.\u003C/li\u003E \u003Cli\u003EBuild and customize HubSpot CMS templates and marketing assets (emails, landing pages, forms).\u003C/li\u003E \u003Cli\u003EIntegrate data from various APIs, including internal services and third-party platforms.\u003C/li\u003E \u003Cli\u003EOptimize applications for performance, accessibility, and SEO.\u003C/li\u003E \u003Cli\u003EOptionally contribute to back-end features using Ruby on Rails (not required, but a bonus).\u003C/li\u003E \u003C/ul\u003E",
+        "socialSharingDescription": "About Enroute:We love technology, and we enjoy what we do. We are always looking for innovation. We have social awareness and try to improve it daily. We make things happen. You can trust us. Our Enrouters are always up for a challenge. We ask question...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cul\u003E \u003Cli\u003EMonetary compensation\u003C/li\u003E \u003Cli\u003EYear-end Bonus\u003C/li\u003E \u003Cli\u003EIMSS, AFORE, INFONAVIT\u003C/li\u003E \u003Cli\u003EMajor Medical Expenses Insurance\u003C/li\u003E \u003Cli\u003EMinor Medical Expenses Insurance\u003C/li\u003E \u003Cli\u003ELife Insurance\u003C/li\u003E \u003Cli\u003EFuneral Expenses Insurance\u003C/li\u003E \u003Cli\u003EPreferential rates for car insurance\u003C/li\u003E \u003Cli\u003ETDU Membership\u003C/li\u003E \u003Cli\u003EHolidays and Vacations\u003C/li\u003E \u003Cli\u003ESick days\u003C/li\u003E \u003Cli\u003EBereavement days\u003C/li\u003E \u003Cli\u003ECivil Marriage days\u003C/li\u003E \u003Cli\u003EMaternity &amp; Paternity leave\u003C/li\u003E \u003Cli\u003EEnglish and Spanish classes\u003C/li\u003E \u003Cli\u003EPerformance Management Framework\u003C/li\u003E \u003Cli\u003ECertifications\u003C/li\u003E \u003Cli\u003ETALISIS Agreement: Discounts at ADVENIO, Harmon Hall, U-ERRE, UNID\u003C/li\u003E \u003Cli\u003ETaquitos Rewards\u003C/li\u003E \u003Cli\u003EAmazon Gift Card on your Birthday\u003C/li\u003E \u003Cli\u003EWork-from-home Bonus\u003C/li\u003E \u003Cli\u003ELaptop Policy\u003C/li\u003E \u003Cli\u003EHealth Check-Up Subsidy\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003E\u003C/p\u003E\u003Cul\u003E \u003Cli\u003E5+ years of experience as a Front-End Developer\u003C/li\u003E \u003Cli\u003EExcellent English communication skills (C1 or higher)\u003C/li\u003E \u003Cli\u003EStrong experience with React (hooks, context, etc.)\u003C/li\u003E \u003Cli\u003EStrong experience with GraphQL (Apollo or similar)\u003C/li\u003E \u003Cli\u003EHubSpot CMS and HubL (HubSpot's templating language) are mandatory\u003C/li\u003E \u003Cli\u003EHTML / CSS / SCSS / JavaScript (ES6+)\u003C/li\u003E \u003Cli\u003EExperience with front-end testing libraries (Jest or similar)\u003C/li\u003E \u003Cli\u003EGit / GitHub for version control\u003C/li\u003E \u003Cli\u003EOptional: Ruby on Rails for back-end contributions\u003C/li\u003E \u003C/ul\u003E",
+        "url": "https://jobs.workable.com/view/boK1fZmnLnAR5aHKZDeNQu/remote-front-end-developer-(react-%2F-graphql-%2F-hubspot)-in-monterrey-at-enroute",
+        "language": "en",
+        "locations": [
+          "TELECOMMUTE",
+          "Monterrey, Nuevo Leon, Mexico"
+        ],
+        "location": {
+          "city": "Monterrey",
+          "subregion": "Nuevo Leon",
+          "countryName": "Mexico"
+        },
+        "created": "2025-06-23T00:00:00.000Z",
+        "updated": "2025-06-23T00:00:00.000Z",
+        "company": {
+          "id": "a9b05c82-218c-4e7e-98f6-3d1046defa8f",
+          "title": "Enroute",
+          "website": "http://www.enroutesystems.com",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/39239/logo",
+          "description": "\u003Cp\u003E\u003Cimg alt=\"\" src=\"https://workablehr.s3.amazonaws.com/uploads/photos/5F93C9ECB351FB3F27025B5873A69B9D/9c1be60232f95c88c8d00693220384da.png\" style=\"display:block;margin:auto\" /\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr /\u003E\u003C/p\u003E\u003Cp\u003EEnroute is about being exceptional. We deliver IT services and solutions provided by a team of passionate problem solving individuals highly skilled in different IT and business practices.\u003C/p\u003E\u003Cp\u003E\u003Cbr /\u003E\u003C/p\u003E\u003Cp\u003EWe look for new opportunities to collaborate with great people. \u003Cbr /\u003ESend us an email and let’s meet over coffee!\u003C/p\u003E\u003Cp\u003E\u003Cbr /\u003E\u003C/p\u003E\u003Cp\u003E\u003Cbr /\u003E\u003C/p\u003E\u003Cp\u003EHouston, TX. USA\u003C/p\u003E\u003Cp\u003E15995 N. Barkers Landing Rd, Suite 315. \u003Cbr /\u003EHouston, Texas 77079 \u003Cbr /\u003ET. (281) 616.5777\u003Cbr /\u003E\u003Cbr /\u003EMonterrey, N.L. MX\u003Cbr /\u003EPuerta del Sol Nte. 209, Dinastía, 64639 Monterrey, N.L.\u003Cbr /\u003ET. (81) 1029-4013\u003C/p\u003E\u003Cp\u003E\u003Ca href=\"http://www.enroutesystems.com\" rel=\"nofollow noreferrer noopener\"\u003Ewww.enroutesystems.com\u003C/a\u003E  \u003C/p\u003E\u003Cp\u003Einfo@enroutesystems.com\u003C/p\u003E\u003Cp\u003E\u003Cbr /\u003E\u003C/p\u003E\u003Cp\u003E\u003Ca href=\"mailto:info@enroute.xyz\" rel=\"nofollow noreferrer noopener\"\u003E\u003C/a\u003E\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/mXjXkdJUs4UM692pV9ZhNt/jobs-at-enroute",
+          "socialSharingImage": "https://workablehr.s3.amazonaws.com/uploads/account/open_graph_logo/39239/social",
+          "socialSharingDescription": "Enroute is about being exceptional. We deliver IT services and solutions provided by a team of passionate problem solving individuals highly skilled in different IT and business practices.We look for new opportunities to collaborate with great people. ..."
+        },
+        "workplace": "remote"
+      },
+      {
+        "id": "8bf1daf1-5bbb-4a94-807d-c0518fd1d19c",
+        "title": ".NET & React Software Engineer/Web Developer (Fixed term contract)",
+        "state": "published",
+        "description": "\u003Cp\u003EWe're looking for a \u003Cstrong\u003Esoftware engineer/web developer\u003C/strong\u003E with experience in both \u003Cstrong\u003E.Net\u003C/strong\u003E and \u003Cstrong\u003EReact\u003C/strong\u003E with proven agency experience to work on a project in a fixed term role for 6 months.\u003C/p\u003E\u003Cp\u003EAs a Developer at Born Digital, you will use your skills as a seasoned professional with a full understanding of best practice development, to deliver quality solutions in accordance with company policies and procedures. \u003C/p\u003E\u003Cp\u003EWe will rely on your imaginative and practical input to help us deliver complex solutions for our customers.\u003C/p\u003E\u003Cp\u003EYou will work with a close knit team of different disciplines including Project Managers, Designers, other Developers and mobile specialists across a wide range of projects. \u003C/p\u003E",
+        "socialSharingDescription": "We&#39;re looking for a software engineer/web developer with experience in both .Net and React with proven agency experience to work on a project in a fixed term role for 6 months.As a Developer at Born Digital, you will use your skills as a seasoned p...",
+        "employmentType": "Full-time",
+        "benefitsSection": "\u003Cp\u003EBorn Digital prides itself on providing a relaxed and fun environment based at our office by the Auckland's City Works Depot. \u003C/p\u003E\u003Cp\u003EStaff are at the center of our business and we make sure that we provide a great working environment with regular social events, monthly one on one catch up sessions and flexibility to sometimes work remotely.\u003C/p\u003E",
+        "requirementsSection": "\u003Cp\u003EThe ideal candidate will have at least 5 years’ experience developing applications for web, mobile and/or kiosk environments and will have been instrumental in the planning and development of projects throughout the development lifecycle.\u003C/p\u003E\u003Cp\u003EYou will be a problem solver, a good communicator and above all a team player – and will have strong experience with some of the following:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EASP.NET (Core + MVC)\u003C/li\u003E \u003Cli\u003EReact\u003C/li\u003E \u003Cli\u003EAzure (App Services, AKS, Azure SQL)\u003C/li\u003E \u003Cli\u003EJavaScript\u003C/li\u003E \u003Cli\u003EHTML/XHTML\u003C/li\u003E \u003Cli\u003ECSS, SaSS\u003C/li\u003E \u003Cli\u003ESQL Server\u003C/li\u003E \u003Cli\u003EEntity Framework (ORM)\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EOther desirable skills:\u003C/p\u003E\u003Cul\u003E \u003Cli\u003EAngular\u003C/li\u003E \u003Cli\u003EAzure DevOps\u003C/li\u003E \u003Cli\u003EAgile\u003C/li\u003E \u003Cli\u003EUmbraco (v8 or higher)\u003C/li\u003E \u003C/ul\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EGood oral and written communication skills are essential, and the eligibility to work in NZ.\u003C/p\u003E\u003Cp\u003E\u003C/p\u003E\u003Cp\u003EThis role is full time for a fixed 6 month contract.\u003C/p\u003E\u003Cp\u003ERemuneration package will reflect candidates' skill level and experience.\u003C/p\u003E\u003Cp\u003EWe are looking for a developer to join our team - please don't apply if you are a business.\u003C/p\u003E",
+        "url": "https://jobs.workable.com/view/ihicoX2FQ3hQd4hx7HA2ZN/.net-%26-react-software-engineer%2Fweb-developer-(fixed-term-contract)-in-auckland-cbd-at-born-digital",
+        "language": "en",
+        "locations": [
+          "Auckland CBD, Auckland, New Zealand"
+        ],
+        "location": {
+          "city": "Auckland CBD",
+          "subregion": "Auckland",
+          "countryName": "New Zealand"
+        },
+        "created": "2025-06-23T00:00:00.000Z",
+        "updated": "2025-06-23T00:00:00.000Z",
+        "company": {
+          "id": "9ea17479-2263-49b1-93b0-01b79b1422b1",
+          "title": "Born Digital",
+          "website": "http://www.borndigital.co.nz",
+          "image": "https://workablehr.s3.amazonaws.com/uploads/account/logo/141309/logo-square.jpg",
+          "description": "\u003Cp\u003E\u003Cstrong\u003EBorn Digital\u003C/strong\u003E specialise in user interface design and development for all digital platforms including internet, kiosks, mobile and digital signage. We have offices in Auckland, NZ and Sydney AU.\u003C/p\u003E",
+          "url": "https://jobs.workable.com/company/kA8mxTPosSxCVzsczuAgVB/jobs-at-born-digital",
+          "socialSharingDescription": "Born Digital specialise in user interface design and development for all digital platforms including internet, kiosks, mobile and digital signage. We have offices in Auckland, NZ and Sydney AU."
+        },
+        "workplace": "on_site"
+      }
+    ],
+    "autoAppliedFilters": {
+  
+    }
+  }

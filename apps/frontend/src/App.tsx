@@ -1,6 +1,6 @@
 import Layout from "./layout/layout";
 import { ResumeBuilder } from "./pages/resume-builder";
-import JobAndInternship from "./pages/job-and-internship";
+import JobAndInternshipPage from "./pages/job-and-internship";
 import Interview from "./pages/interview";
 import Dashboard from "./pages/dashboard";
 import Settings from "./pages/settings";
@@ -15,7 +15,10 @@ function App() {
         <Routes>
           <Route path="/resume" element={<ResumeBuilder />} />
           <Route path="/resume/print" element={<PrintResumePage />} />
-          <Route path="/job-and-internship" element={<JobAndInternship />} />
+          <Route
+            path="/job-and-internship"
+            element={<JobAndInternshipPage />}
+          />
           <Route path="/interview" element={<Interview />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/settings" element={<Settings />} />
