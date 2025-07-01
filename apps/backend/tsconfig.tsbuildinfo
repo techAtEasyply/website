@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/utils/fetchjobs.ts","./src/utils/scraper/indeed.ts"],"version":"5.8.2"}
+{"root":["./src/index.ts","./src/controllers/job.controller.ts","./src/routes/jobs.route.ts"],"version":"5.8.3"}

@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 // @ts-ignore: Allow importing JSON (requires --resolveJsonModule in tsconfig)
 import sampleApiResponse from "@/utils/sampleApiResponse.json";
+import axios from 'axios'
 
 interface Job {
   id: string;
@@ -22,7 +23,7 @@ interface Job {
   [key: string]: any;
 }
 
-const API_URL = "http://localhost:3001/api/jobs";
+const API_URL = "http://localhost:3000/api/jobs";
 
 export default function JobAndInternshipPage() {
   const [jobs] = useState<Job[]>(sampleApiResponse.jobs || []);
@@ -32,6 +33,17 @@ export default function JobAndInternshipPage() {
   const [search, setSearch] = useState("");
   const [page, setPage] = useState(1);
   const jobsPerPage = 8;
+
+  useEffect(() => {
+
+    const fetchJobs = async () => {
+    const response = await axios.post(API_URL, {
+      query : "react"
+    })
+    console.log(response.data)
+  }
+  fetchJobs()
+  })
 
   const filteredJobs = jobs.filter(
     (job) =>

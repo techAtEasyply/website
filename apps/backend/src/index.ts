@@ -1,16 +1,20 @@
 import express from 'express'
-import scrapeIndeedJobs from './utils/scraper/indeed'
+import cors from 'cors'
+import jobsRouter from './routes/jobs.route'
 
 const app = express()
 
+app.use(express.json());
+app.use(cors({
+  origin : 'http://localhost:5173'
+}))
+
+app.use('/api/jobs', jobsRouter)
 app.get('/', (req, res) => {
-  res.send('hello')
+  res.send("Hello World")
 })
 
-async function scrape() {
-  const data = await scrapeIndeedJobs()
-  // prod
-  console.log(data)
-}
 
-app.listen(3000)
+app.listen(3000, () => {
+  console.log("server running")
+})
