@@ -8,8 +8,71 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User{
-  id Int @unique
-  name String
-  password String
+model User {
+  id             String   @id @default(uuid())
+  email          String   @unique
+  name           String
+  password       String
+  subscription   SubscriptionType @default(FREE)
+  resumes        Resume[]
+  interviews     Interview[]
+  createdAt      DateTime @default(now())
+}
+
+model Resume {
+  id               String   @id @default(uuid())
+  user             User     @relation(fields: [userId], references: [id])
+  userId           String
+  title            String
+  content          Json     // Raw or parsed resume data
+  atsScore         Int
+  potentialScore   Int
+  isPaidOptimized  Boolean  @default(false)
+  createdAt        DateTime @default(now())
+}
+
+model Interview {
+  id              String   @id @default(uuid())
+  user            User     @relation(fields: [userId], references: [id])
+  userId          String
+  type            InterviewType // DSA, DEV, HR, DBMS, etc.
+  difficulty      Difficulty
+  transcript      Json     // Q&A and evaluations
+  feedback        String?
+  strengths       String?
+  weaknesses      String?
+  score           Int?
+  createdAt       DateTime @default(now())
+}
+
+model JobListing {
+  id          String   @id @default(uuid())
+  title       String
+  company     String
+  location    String?
+  source      String   // LinkedIn, Twitter, etc.
+  url         String
+  tags        String[]
+  scrapedAt   DateTime @default(now())
+}
+
+
+
+enum SubscriptionType {
+  FREE
+  PREMIUM
+}
+
+enum InterviewType {
+  DSA
+  CS_FUNDAMENTALS
+  DEVELOPMENT
+  HR
+  CUSTOM
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
 }
