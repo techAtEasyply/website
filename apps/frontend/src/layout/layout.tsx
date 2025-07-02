@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <SidebarProvider>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-        <div className="relative min-h-svh flex">
+        <div className="relative min-h-svh flex w-screen">
           <AppSidebar />
           <SidebarTrigger className="pl-2 print:hidden" />
           <main className="flex-1 relative min-h-svh flex flex-col items-center justify-center">

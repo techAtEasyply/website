@@ -7,25 +7,29 @@ import Settings from "./pages/settings";
 import PrintResumePage from "./pages/print-resume";
 import ResumePreviewPage from "./pages/preview-resume";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import StartInterview from './pages/startInterview';
 
 function App() {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
+      <Routes>
+        <Route
+          element={<Layout />}
+        >
           <Route path="/resume" element={<ResumeBuilder />} />
           <Route path="/resume/print" element={<PrintResumePage />} />
           <Route
             path="/job-and-internship"
             element={<JobAndInternshipPage />}
           />
-          <Route path="/interview" element={<Interview />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="/preview" element={<ResumePreviewPage />} />
           <Route path="/" element={<Navigate to="/resume" replace />} />
-        </Routes>
-      </Layout>
+        </Route>
+          <Route path="/interview" element={<Interview />} />
+        <Route path="/startInterview" element={<StartInterview />} />
+      </Routes>
     </BrowserRouter>
   );
 }
