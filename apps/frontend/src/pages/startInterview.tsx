@@ -8,12 +8,63 @@ import CodeEditor from "@/components/code-editor"
 import VideoCall from "@/components/video-call"
 import ChatPanel from "@/components/chat-panel"
 import { useInterviewStore } from "@/store/useInterview"
+import { play } from 'elevenlabs'
+const ll = {
+  phase_1: {
+    name: "Communication & Resume",
+    questions: [
+      "Can you please introduce yourself?",
+      "Tell me about your most impactful project mentioned in your resume.",
+      "What motivated you to pursue a career in software engineering?",
+      "What are your hobbies, and how do they influence your personality or work ethic?"
+    ]
+  },
+  phase_2: {
+    name: "CS Fundamentals",
+    questions: [
+      "What is the difference between a process and a thread?",
+      "Explain normalization in DBMS. Why is it important?",
+      "What is polymorphism in OOP? Give a real-world example.",
+      "Which bash command would you use to list all hidden files in a directory?"
+    ]
+  },
+  phase_3: {
+    name: "DSA & Coding",
+    questions: [
+      {
+        problem: "Given an array of integers, return indices of the two numbers such that they add up to a specific target.",
+        input: "[2, 7, 11, 15], target = 9",
+        output: "[0, 1]",
+        difficulty: "Easy"
+      },
+      {
+        problem: "Given a string s, find the length of the longest substring without repeating characters.",
+        input: "\"abcabcbb\"",
+        output: "3",
+        difficulty: "Medium"
+      }
+    ]
+  },
+  phase_4: {
+    name: "Behavioral / HR",
+    questions: [
+      "Tell me about a time you handled a conflict in your team.",
+      "Describe a situation where you made a mistake. What did you learn?",
+      "How do you handle stress during tight deadlines?",
+      "Where do you see yourself in 3–5 years?"
+    ]
+  }
+};
+
+const phaseKeys = ["phase_1", "phase_2", "phase_3", "phase_4"];
 
 export default function InterviewPage() {
-  const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [timeElapsed, setTimeElapsed] = useState(0)
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [phase, setPhase] = useState(0); // phase index, 0-based
+  const [timeElapsed, setTimeElapsed] = useState(0);
 
-  const localVideoRef = useRef<HTMLVideoElement>(null)
+  const localVideoRef = useRef<HTMLVideoElement>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   // Add a type for the store to avoid lint errors
   const {
@@ -25,46 +76,135 @@ export default function InterviewPage() {
     setIsVideoOff = () => {},
     setShowChat = () => {},
     setIsInterviewActive = () => {},
+    connectSocket = () => {},
+    disconnectSocket = () => {},
+    introduction = (question: string) => {},
+    audio,
+    evaluateAnswer,
+    isAiSpeaking
   } = useInterviewStore() as {
-    isMuted?: boolean
-    isVideoOff?: boolean
-    showChat?: boolean
-    isInterviewActive?: boolean
-    setIsMuted?: (v: boolean) => void
-    setIsVideoOff?: (v: boolean) => void
-    setShowChat?: (v: boolean) => void
-    setIsInterviewActive?: (v: boolean) => void
-  }
+    isMuted?: boolean;
+    isVideoOff?: boolean;
+    showChat?: boolean;
+    isInterviewActive?: boolean;
+    setIsMuted?: (v: boolean) => void;
+    setIsVideoOff?: (v: boolean) => void;
+    setShowChat?: (v: boolean) => void;
+    setIsInterviewActive?: (v: boolean) => void;
+    connectSocket?: () => void;
+    disconnectSocket?: () => void;
+    introduction?: (question: string) => void;
+    audio?: any;
+      evaluateAnswer: any;
+    isAiSpeaking :boolean
+  };
 
-  // console.log(isMuted, isVideoOff, showChat, isInterviewActive)
+  // Get current phase key and questions array
+  const currentPhaseKey = phaseKeys[phase];
+  const currentPhase = ll[currentPhaseKey];
+  const questionsArray = currentPhase.questions;
 
-  const [text, setText] = useState("")
-  const [listening, setListening] = useState(false)
-  const recognitionRef = useRef<SpeechRecognition | null>(null)
+  // For DSA phase, questions are objects, so handle accordingly
+  const getQuestionText = (q: any) => {
+    if (typeof q === "string") return q;
+    if (q && typeof q === "object" && q.problem) return q.problem;
+    return "";
+  };
 
-  // Setup recognition instance only on client
+  const firstQuestion = getQuestionText(questionsArray[0]);
+
+  useEffect(() => {
+    connectSocket();
+    setTimeout(() => {
+      // 1 second has passed
+    }, 1000);
+
+    console.log("sending introduction");
+    introduction(firstQuestion);
+
+    return disconnectSocket();
+  }, []);
+
+  // // Play audio when received from backend
+  // useEffect(() => {
+  //   const playAudio = async () => {
+  //     if (!audio) return;
+  //     try {
+  //       console.log("audio will play now");
+  //       // If audio is a stream (e.g., Buffer or Uint8Array), convert to Blob and play
+  //     } catch (err) {
+  //       console.error("Error playing audio:", err);
+  //     }
+  //   };
+  //   playAudio();
+  // }, [audio]);
+
+  const [text, setText] = useState("");
+  const [listening, setListening] = useState(false);
+  const recognitionRef = useRef<any>(null);
+
+  // ! Setup recognition instance only on client
   useEffect(() => {
     if (typeof window !== "undefined") {
       const SpeechRecognition =
-        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+        (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+      if (!isAiSpeaking) {
       if (SpeechRecognition) {
-        const recognition = new SpeechRecognition()
-        recognition.continuous = true
-        recognition.lang = "en-IN"
-        recognition.interimResults = true
+        const recognition = new SpeechRecognition();
+        recognition.continuous = true;
+        recognition.lang = "en-IN";
+        recognition.interimResults = true;
 
-        recognition.onresult = (event: SpeechRecognitionEvent) => {
-          let finalTranscript = ""
+        recognition.onresult = (event: any) => {
+          let finalTranscript = "";
           for (let i = event.resultIndex; i < event.results.length; i++) {
-            const transcript = event.results[i][0].transcript
-            if (event.results[i].isFinal) finalTranscript += transcript + " "
+            const transcript = event.results[i][0].transcript;
+            if (event.results[i].isFinal) finalTranscript += transcript + " ";
           }
           if (finalTranscript) {
-            setText((prev) => prev + finalTranscript)
-            console.log(finalTranscript)
-            // todo make a backend api call here
+            setText((prev) => prev + finalTranscript);
+            console.log(finalTranscript);
+
+            // Move to next question or next phase
+            const nextQuestionIndex = currentQuestion + 1;
+            const isLastQuestionInPhase = nextQuestionIndex >= questionsArray.length;
+            let nextPhase = phase;
+            let nextQuestion = currentQuestion;
+
+            if (!isLastQuestionInPhase) {
+              // More questions in current phase
+              nextQuestion = nextQuestionIndex;
+            } else if (phase < phaseKeys.length - 1) {
+              // Move to next phase
+              nextPhase = phase + 1;
+              nextQuestion = 0;
+            } else {
+              // Last question of last phase, do nothing or end interview
+              // Optionally, you can set a flag to end the interview here
+            }
+
+            // Call evaluateAnswer with current, transcript, and next question (if exists)
+            const currentQ = questionsArray[currentQuestion];
+            let nextQ: any = null;
+            if (!isLastQuestionInPhase) {
+              nextQ = questionsArray[nextQuestionIndex];
+            } else if (nextPhase < phaseKeys.length) {
+              const nextPhaseKey = phaseKeys[nextPhase];
+              const nextPhaseQuestions = ll[nextPhaseKey].questions;
+              nextQ = nextPhaseQuestions[0];
+            }
+
+            evaluateAnswer(
+              getQuestionText(currentQ),
+              finalTranscript,
+              nextQ ? getQuestionText(nextQ) : null
+            );
+
+            // Update state to move forward
+            setCurrentQuestion(nextQuestion);
+            setPhase(nextPhase);
           }
-        }
+        };
 
         recognition.onerror = (event: any) => {
           console.error("Speech recognition error:", event.error)
@@ -81,11 +221,10 @@ export default function InterviewPage() {
         recognitionRef.current.stop()
       }
     }
+       }
   }, [])
 
-
-
-  // Start/stop listening when mic is toggled
+  // ! Start/stop listening when mic is toggled
   useEffect(() => {
     if (!recognitionRef.current) return
     if (!isMuted) {
@@ -233,18 +372,18 @@ export default function InterviewPage() {
           <div className="bg-gray-800 border-b border-gray-700 p-4">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-3">
-                <h2 className="text-xl font-semibold text-white">{currentQ.title}</h2>
+                <h2 className="text-xl font-semibold text-white">{currentQ?.title}</h2>
                 <Badge
                   variant="secondary"
                   className={`${
-                    currentQ.difficulty === "Easy"
+                    currentQ?.difficulty === "Easy"
                       ? "bg-green-500/20 text-green-400"
-                      : currentQ.difficulty === "Medium"
+                      : currentQ?.difficulty === "Medium"
                         ? "bg-yellow-500/20 text-yellow-400"
                         : "bg-red-500/20 text-red-400"
                   }`}
                 >
-                  {currentQ.difficulty}
+                  {currentQ?.difficulty}
                 </Badge>
               </div>
               <div className="flex items-center gap-2">
@@ -258,13 +397,13 @@ export default function InterviewPage() {
                 </Button>
               </div>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">{currentQ.description}</p>
+            <p className="text-gray-300 text-sm leading-relaxed">{currentQ?.description}</p>
           </div>
 
           {/* Code Editor */}
           <div className="flex-1 flex">
             <div className="flex-1">
-              <CodeEditor initialCode={currentQ.initialCode} />
+              <CodeEditor initialCode={currentQ?.initialCode} />
             </div>
 
             {/* Test Cases Panel */}
@@ -272,15 +411,15 @@ export default function InterviewPage() {
               <div className="p-4 border-b border-gray-700">
                 <h3 className="font-medium text-white mb-3">Test Cases</h3>
                 <div className="space-y-3">
-                  {currentQ.testCases.map((testCase, index) => (
+                  {currentQ?.testCases?.map((testCase, index) => (
                     <div key={index} className="bg-gray-700/50 rounded-lg p-3">
                       <div className="text-sm">
                         <div className="text-gray-300 mb-1">Input:</div>
-                        <code className="text-blue-400 text-xs">{testCase.input}</code>
+                        <code className="text-blue-400 text-xs">{testCase?.input}</code>
                       </div>
                       <div className="text-sm mt-2">
                         <div className="text-gray-300 mb-1">Expected Output:</div>
-                        <code className="text-green-400 text-xs">{testCase.output}</code>
+                        <code className="text-green-400 text-xs">{testCase?.output}</code>
                       </div>
                     </div>
                   ))}

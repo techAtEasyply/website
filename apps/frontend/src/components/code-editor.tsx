@@ -12,7 +12,7 @@ interface CodeEditorProps {
 export default function CodeEditor({ initialCode }: CodeEditorProps) {
   const [code, setCode] = useState(initialCode)
   const [lineNumbers, setLineNumbers] = useState(
-    Array.from({ length: initialCode.split("\n").length }, (_, i) => i + 1),
+    Array.from({ length: initialCode?.split("\n").length }, (_, i) => i + 1),
   )
 
   const handleCodeChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {

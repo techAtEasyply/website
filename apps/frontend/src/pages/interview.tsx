@@ -45,31 +45,87 @@ export default function InterviewPracticePage() {
   const [selectedType, setSelectedType] = useState("")
 
   const interviewFormats = [
-    {
-      title: "Technical Interview",
-      description: "Coding challenges and technical problem solving",
-      duration: "45-60 minutes",
-      icon: Code,
-      color: "from-blue-500 to-cyan-500",
-      includes: ["Algorithm problems", "Code review", "System design basics"],
-    },
-    {
-      title: "Behavioral Interview",
-      description: "Soft skills and experience-based questions",
-      duration: "30-45 minutes",
-      icon: Users,
-      color: "from-purple-500 to-pink-500",
-      includes: ["STAR method questions", "Leadership scenarios", "Conflict resolution"],
-    },
-    {
-      title: "Mixed Interview",
-      description: "Combination of technical and behavioral questions",
-      duration: "60-90 minutes",
-      icon: Brain,
-      color: "from-emerald-500 to-teal-500",
-      includes: ["Technical challenges", "Behavioral assessment", "Culture fit"],
-    },
-  ]
+  {
+    title: "Technical Interview",
+    description: "Coding challenges and technical problem solving",
+    duration: "45-60 minutes",
+    icon: Code,
+    color: "from-blue-500 to-cyan-500",
+    includes: ["Algorithm problems", "Code review", "System design basics"],
+  },
+  {
+    title: "Behavioral Interview",
+    description: "Soft skills and experience-based questions",
+    duration: "30-45 minutes",
+    icon: Users,
+    color: "from-purple-500 to-pink-500",
+    includes: ["STAR method questions", "Leadership scenarios", "Conflict resolution"],
+  },
+  {
+    title: "Mixed Interview",
+    description: "Combination of technical and behavioral questions",
+    duration: "60-90 minutes",
+    icon: Brain,
+    color: "from-emerald-500 to-teal-500",
+    includes: ["Technical challenges", "Behavioral assessment", "Culture fit"],
+  },
+  {
+    title: "System Design Interview",
+    description: "Test your ability to design scalable systems",
+    duration: "45-60 minutes",
+    icon: TrendingUp,
+    color: "from-yellow-500 to-orange-500",
+    includes: ["Design REST APIs", "Database modeling", "Scaling strategies"],
+  },
+  {
+    title: "AI/ML Interview",
+    description: "Questions focused on machine learning and data science",
+    duration: "45-60 minutes",
+    icon: Brain,
+    color: "from-indigo-500 to-fuchsia-500",
+    includes: ["ML algorithms", "Model evaluation", "Data pipelines"],
+  },
+  {
+    title: "Frontend Development Interview",
+    description: "For roles focused on UI/UX and frontend tech",
+    duration: "40-60 minutes",
+    icon: Code,
+    color: "from-pink-500 to-red-500",
+    includes: ["React/JS questions", "UI scenarios", "Accessibility"],
+  },
+  {
+    title: "Backend Development Interview",
+    description: "Server-side logic, DBs, and API design",
+    duration: "45-60 minutes",
+    icon: Code,
+    color: "from-gray-700 to-gray-400",
+    includes: ["Databases", "Authentication", "API structures"],
+  },
+  {
+    title: "Product Management Interview",
+    description: "Case studies and product thinking",
+    duration: "45-60 minutes",
+    icon: Calendar,
+    color: "from-green-500 to-lime-500",
+    includes: ["Prioritization", "Roadmapping", "User stories"],
+  },
+  {
+    title: "UI/UX Design Interview",
+    description: "For design-oriented roles",
+    duration: "30-45 minutes",
+    icon: Award,
+    color: "from-rose-500 to-piñk-600",
+    includes: ["Design systems", "Figma walkthrough", "User flows"],
+  },
+  {
+    title: "HR/Non-Technical Interview",
+    description: "Suited for business, law, medical, and HR domains",
+    duration: "30-40 minutes",
+    icon: Users,
+    color: "from-orange-400 to-yellow-400",
+    includes: ["Situational questions", "Communication skills", "Domain ethics"],
+  }
+]
 
   const performanceData = [
     {

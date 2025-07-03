@@ -3,10 +3,10 @@ import cors from 'cors'
 import jobsRouter from './routes/jobs.route'
 import interviewRouter from "./routes/interview.route"
 import dotenv from 'dotenv'
+import { app , server } from './lib/socket.js';
 
 dotenv.config();
 
-const app = express()
 
 const port = process.env.PORT || 3000;
 
@@ -22,6 +22,6 @@ app.get('/', (req, res) => {
   res.send("Hello World")
 })
 
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`server running on http://localhost:${port}`)
 })

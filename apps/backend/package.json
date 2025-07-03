@@ -19,7 +19,9 @@
     "cheerio": "^1.1.0",
     "cors": "^2.8.5",
     "dotenv": "^17.0.1",
-    "express": "^5.1.0"
+    "elevenlabs": "^1.59.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "prisma": "^6.10.1"

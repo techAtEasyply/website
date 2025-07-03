@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/controllers/interview.controller.ts","./src/controllers/job.controller.ts","./src/lib/apicall.ts","./src/lib/genericprompt.ts","./src/routes/interview.route.ts","./src/routes/jobs.route.ts"],"version":"5.8.3"}
+{"root":["./src/index.ts","./src/controllers/interview.controller.ts","./src/controllers/job.controller.ts","./src/controllers/socket.controller.ts","./src/lib/apicall.ts","./src/lib/genericprompt.ts","./src/lib/socket.ts","./src/lib/utils.ts","./src/routes/interview.route.ts","./src/routes/jobs.route.ts"],"version":"5.8.3"}

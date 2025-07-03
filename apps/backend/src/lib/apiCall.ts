@@ -54,7 +54,6 @@ export async function callGeminiApi(prompt: string) {
         }
       }
     );
-    // Only return the text part from the first candidate
     const text = response.data?.candidates?.[0]?.content?.parts?.[0]?.text;
     return text;
   } catch (error: any) {
