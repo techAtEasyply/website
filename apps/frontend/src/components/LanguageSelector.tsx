@@ -22,7 +22,7 @@ const LanguageSelector = ({ language, onSelect }) => {
         ))}
       </select>
       <span className="ml-2 text-xs text-gray-400 bg-gray-700 px-2 py-1 rounded">
-        v{LANGUAGE_VERSIONS[language]}
+        {LANGUAGE_VERSIONS[language]}
       </span>
     </div>
   );

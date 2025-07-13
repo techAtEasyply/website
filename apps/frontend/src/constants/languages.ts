@@ -4,38 +4,48 @@ export const LANGUAGE_VERSIONS = {
   java: "15.0.2",
   csharp: "6.12.0",
   php: "8.2.3",
-  cplusplus: "11.2.0",
+  cpp: "11.2.0",
 };
 
-export const BOILERPLATE = {
-  javascript: {
-    input: `
+export const BOILERPLATES: Record<string, string> = {
+  javascript: `
 const input = require('fs').readFileSync(0, 'utf-8').trim().split('\\n');
 const nums = input[0].split(' ').map(Number);
 const target = Number(input[1]);
-`,
-    output: `
+//-------------------------------
+// Example function
+function sumArray(arr) {
+  return arr.reduce((a, b) => a + b, 0);
+}
+//-------------------------------
 // User code starts here
 console.log(nums, target);
 `,
-  },
-  python: {
-    input: `
+  python: `
 import sys
 input = sys.stdin.read().strip().split('\\n')
 nums = list(map(int, input[0].split()))
 target = int(input[1])
-`,
-    output: `
+#-------------------------------
+# Example function
+// def sum_array(arr):
+//     return sum(arr)
+#-------------------------------
 # User code starts here
 print(nums, target)
 `,
-  },
-  java: {
-    input: `
+  java: `
 import java.util.Scanner;
 import java.util.Arrays;
 public class Main {
+    // -------------------------------
+    // Example function
+    // public static int sumArray(int[] arr) {
+    //     int sum = 0;
+    //     for (int num : arr) sum += num;
+    //     return sum;
+    // }
+    // ------------------------------
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] numsStr = sc.nextLine().split(" ");
@@ -44,48 +54,58 @@ public class Main {
             nums[i] = Integer.parseInt(numsStr[i]);
         }
         int target = Integer.parseInt(sc.nextLine());
-`,
-    output: `
         // User code starts here
         System.out.println(Arrays.toString(nums) + " " + target);
     }
 }
 `,
-  },
-  csharp: {
-    input: `
+  csharp: `
 using System;
 class Program {
+    //-------------------------------
+    // Example function
+    // static int SumArray(int[] arr) {
+    //     int sum = 0;
+    //     foreach (int num in arr) sum += num;
+    //     return sum;
+    // }
+    //-------------------------------
     static void Main(string[] args) {
         string[] numsStr = Console.ReadLine().Split(' ');
         int[] nums = Array.ConvertAll(numsStr, int.Parse);
         int target = int.Parse(Console.ReadLine());
-`,
-    output: `
         // User code starts here
         Console.WriteLine(string.Join(" ", nums) + " " + target);
     }
 }
 `,
-  },
-  php: {
-    input: `
+  php: `
 <?php
+//-------------------------------
+// Example function
+//function sumArray($arr) {
+//    return array_sum($arr);
+//}
+//-------------------------------
 $nums = array_map('intval', explode(' ', trim(fgets(STDIN))));
 $target = intval(trim(fgets(STDIN)));
-`,
-    output: `
 // User code starts here
 echo implode(' ', $nums) . ' ' . $target . PHP_EOL;
 `,
-  },
-  cplusplus: {
-    input: `
+  cpp: `
 #include <iostream>
 #include <sstream>
 #include <vector>
 using namespace std;
 
+//-------------------------------
+// Example function
+//int sumArray(const vector<int>& arr) {
+//    int sum = 0;
+//    for (int num : arr) sum += num;
+//    return sum;
+// }
+//-------------------------------
 int main() {
     string line;
     getline(cin, line);
@@ -95,15 +115,10 @@ int main() {
     while (ss >> num) nums.push_back(num);
     int target;
     cin >> target;
-`,
-    output: `
     // User code starts here
     for (int i = 0; i < nums.size(); ++i) cout << nums[i] << " ";
     cout << target << endl;
     return 0;
 }
 `,
-  },
 };
-export const BOILERPLATES: Record<string, { input: string; output: string }> =
-  BOILERPLATE;
