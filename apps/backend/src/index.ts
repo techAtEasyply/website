@@ -3,7 +3,7 @@ import cors from 'cors'
 import jobsRouter from './routes/jobs.route'
 import interviewRouter from "./routes/interview.route"
 import dotenv from 'dotenv'
-import { app, server } from './lib/socket.js';
+import { app, server } from './lib/socket';
 import { ClerkExpressRequireAuth, clerkClient } from '@clerk/clerk-sdk-node';
 
 dotenv.config();
