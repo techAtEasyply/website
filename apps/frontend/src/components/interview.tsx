@@ -9,7 +9,6 @@ import { formatTime } from "../lib/utils";
 import VideoCall from "@/components/video-call";
 import CodeEditor from "@/components/code-editor";
 import Output from "@/components/Output"; //!TODO
-import { useState } from "react";
 import { runCode } from "../apis/apis";
 
 export function TopPanel(props: {
@@ -163,18 +162,23 @@ type Question = {
 };
 
 export function RightPanel({ currentQ }: { currentQ: Question }) {
-  // State for code, language, stdin, and output
-  const [code, setCode] = useState(currentQ?.initialCode || "");
-  const [language, setLanguage] = useState("javascript");
-  const [stdin, setStdin] = useState(currentQ?.testCases?.[0]?.input || "");
-  const [output, setOutput] = useState("");
-  const [loading, setLoading] = useState(false);
+  const {
+    code,
+    setCode,
+    language,
+    setLanguage,
+    stdin,
+    setStdin,
+    output,
+    setOutput,
+    loading,
+    setLoading,
+  } = useInterviewStore();
 
   const handleRunCode = async () => {
     setLoading(true);
     try {
       const result = await runCode(code, language, stdin);
-      // Prefer run.output, then output, then stderr, then a generic error
       const outputText = result.run?.output || result.output || result.run?.stderr || result.stderr || "No output";
       setOutput(outputText);
     } catch (e: unknown) {

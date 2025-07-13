@@ -5,7 +5,39 @@ import { audio } from 'elevenlabs/api/resources/voices/resources/pvc/resources/s
 
 const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:3000/" : "/"
 
-export const useInterviewStore = create((set, get) => ({
+// Add types for code execution state
+export interface InterviewStore {
+  isMuted: boolean;
+  isVideoOff: boolean;
+  showChat: boolean;
+  isInterviewActive: boolean;
+  setIsMuted: (isMuted: boolean) => void;
+  setIsVideoOff: (isVideoOff: boolean) => void;
+  setShowChat: (showChat: boolean) => void;
+  setIsInterviewActive: (isInterviewActive: boolean) => void;
+  socket: Socket | null;
+  audio: any;
+  currentQuestion: string;
+  answer: string;
+  isAiSpeaking: boolean;
+  connectSocket: () => void;
+  disconnectSocket: () => void;
+  introduction: (question: string) => void;
+  evaluateAnswer: (currentQuestion: string, answer: string, followupQuestion: string) => void;
+  // Code execution state
+  code: string;
+  language: string;
+  stdin: string;
+  output: string;
+  loading: boolean;
+  setCode: (code: string) => void;
+  setLanguage: (language: string) => void;
+  setStdin: (stdin: string) => void;
+  setOutput: (output: string) => void;
+  setLoading: (loading: boolean) => void;
+}
+
+export const useInterviewStore = create<InterviewStore>((set, get) => ({
   isMuted: false,
   isVideoOff: false,
   showChat: false,
@@ -19,6 +51,18 @@ export const useInterviewStore = create((set, get) => ({
   currentQuestion: "",
   answer: "",
   isAiSpeaking: false,
+
+  // --- Code Execution State ---
+  code: "",
+  language: "javascript",
+  stdin: "",
+  output: "",
+  loading: false,
+  setCode: (code: string) => set({ code }),
+  setLanguage: (language: string) => set({ language }),
+  setStdin: (stdin: string) => set({ stdin }),
+  setOutput: (output: string) => set({ output }),
+  setLoading: (loading: boolean) => set({ loading }),
 
   connectSocket:  () => {
     const state = get() as any;
