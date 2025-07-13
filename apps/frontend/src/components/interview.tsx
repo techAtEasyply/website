@@ -9,6 +9,8 @@ import { formatTime } from "../lib/utils";
 import VideoCall from "@/components/video-call";
 import CodeEditor from "@/components/code-editor";
 import Output from "@/components/Output"; //!TODO
+import { useState } from "react";
+import { runCode } from "../apis/apis";
 
 export function TopPanel(props: {
   timeElapsed: number;
@@ -160,11 +162,32 @@ type Question = {
   testCases: TestCase[];
 };
 
-type CodeEditorProps = {
-  currentQ: Question;
-};
+export function RightPanel({ currentQ }: { currentQ: Question }) {
+  // State for code, language, stdin, and output
+  const [code, setCode] = useState(currentQ?.initialCode || "");
+  const [language, setLanguage] = useState("javascript");
+  const [stdin, setStdin] = useState(currentQ?.testCases?.[0]?.input || "");
+  const [output, setOutput] = useState("");
+  const [loading, setLoading] = useState(false);
 
-export function RightPanel({ currentQ }: any) {
+  const handleRunCode = async () => {
+    setLoading(true);
+    try {
+      const result = await runCode(code, language, stdin);
+      // Prefer run.output, then output, then stderr, then a generic error
+      const outputText = result.run?.output || result.output || result.run?.stderr || result.stderr || "No output";
+      setOutput(outputText);
+    } catch (e: unknown) {
+      if (typeof e === "object" && e && "message" in e && typeof (e as { message?: unknown }).message === "string") {
+        setOutput((e as { message: string }).message || "Error running code");
+      } else {
+        setOutput("Error running code");
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <>
       <div className="flex-1 flex flex-col bg-gray-900">
@@ -193,13 +216,19 @@ export function RightPanel({ currentQ }: any) {
                 variant="outline"
                 size="sm"
                 className="border-gray-600 text-gray-300 bg-transparent"
+                onClick={() => {
+                  setCode(currentQ?.initialCode || "");
+                  setLanguage("javascript");
+                  setStdin(currentQ?.testCases?.[0]?.input || "");
+                  setOutput("");
+                }}
               >
                 <RotateCcw className="w-4 h-4 mr-2" />
                 Reset
               </Button>
-              <Button size="sm" className="bg-green-600 hover:bg-green-700">
+              <Button size="sm" className="bg-green-600 hover:bg-green-700" onClick={handleRunCode} disabled={loading}>
                 <Play className="w-4 h-4 mr-2" />
-                Run Code
+                {loading ? "Running..." : "Run Code"}
               </Button>
             </div>
           </div>
@@ -211,10 +240,12 @@ export function RightPanel({ currentQ }: any) {
         {/* Code Editor */}
         <div className="flex-1 flex">
           <div className="flex-1">
-            <CodeEditor initialCode={currentQ?.initialCode} />
-            <div className="bg-gray-950 border border-gray-800 rounded-lg p-4 text-gray-200 font-mono min-h-[200px]">
-              <pre>{currentQ?.initialCode}</pre>
-            </div>
+            <CodeEditor
+              value={code}
+              language={language}
+              onChange={setCode}
+              onLanguageChange={setLanguage}
+            />
           </div>
 
           {/* Test Cases Panel */}
@@ -236,6 +267,13 @@ export function RightPanel({ currentQ }: any) {
                         {testCase?.output}
                       </code>
                     </div>
+                    <Button
+                      size="sm"
+                      className="mt-2 bg-blue-700 hover:bg-blue-800"
+                      onClick={() => setStdin(testCase.input)}
+                    >
+                      Use as Input
+                    </Button>
                   </div>
                 ))}
               </div>

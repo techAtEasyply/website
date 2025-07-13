@@ -1,4 +1,3 @@
-
 const Output = ({ output }) => {
   return (
     <div className='pt-2'>
@@ -8,9 +7,9 @@ const Output = ({ output }) => {
         </div>
     </div>
   )
-//OUTPUT NOT DIFINED IN THE INTERVIEW FILE , so file will not run
-// <Output output={output<-this is not defined btw} pls add in the interview.tsx />
-export default Output
+}
+
+export default Output;
 
 
 
