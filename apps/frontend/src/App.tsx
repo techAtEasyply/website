@@ -6,10 +6,16 @@ import Dashboard from "./pages/dashboard";
 import Settings from "./pages/settings";
 import PrintResumePage from "./pages/print-resume";
 import ResumePreviewPage from "./pages/preview-resume";
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
-import StartInterview from './pages/startInterview';
-import { AuthPage } from './pages/auth';
-import { UserButton, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
+import StartInterview from "./pages/startInterview";
+import { AuthPage } from "./pages/auth";
+import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
 
 function ProtectedRoutes() {
   return (
@@ -18,7 +24,10 @@ function ProtectedRoutes() {
         <Routes>
           <Route path="/resume" element={<ResumeBuilder />} />
           <Route path="/resume/print" element={<PrintResumePage />} />
-          <Route path="/job-and-internship" element={<JobAndInternshipPage />} />
+          <Route
+            path="/job-and-internship"
+            element={<JobAndInternshipPage />}
+          />
 
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/settings" element={<Settings />} />
@@ -38,7 +47,13 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout><Outlet /></Layout>}>
+        <Route
+          element={
+            <Layout>
+              <Outlet />
+            </Layout>
+          }
+        >
           <Route path="/sign-in" element={<AuthPage />} />
           <Route path="/sign-up" element={<AuthPage />} />
           <Route path="*" element={<ProtectedRoutes />} />

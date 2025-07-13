@@ -2,12 +2,13 @@ import { RotateCcw, Play } from "lucide-react";
 import { useInterviewStore } from "@/store/useInterview";
 import { motion } from "framer-motion";
 import { Mic, MicOff, Video, VideoOff, Phone } from "lucide-react";
- import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { MessageSquare, Settings, Clock } from "lucide-react";
 import { formatTime } from "../lib/utils";
 import VideoCall from "@/components/video-call";
-import CodeEditor from "@/components/code-editor"
+import CodeEditor from "@/components/code-editor";
+import Output from "@/components/Output"; //!TODO
 
 export function TopPanel(props: {
   timeElapsed: number;
@@ -17,7 +18,6 @@ export function TopPanel(props: {
   // Import needed components and utils inside the function
   // (for demonstration, but in practice, imports are at the top of the file)
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-
 
   const { timeElapsed, setShowChat, showChat } = props;
 
@@ -44,7 +44,11 @@ export function TopPanel(props: {
           >
             <MessageSquare className="w-4 h-4" />
           </Button>
-          <Button variant="ghost" size="sm" className="text-gray-300 hover:text-white hover:bg-gray-700">
+          <Button
+            variant="ghost"
+            size="sm"
+            className="text-gray-300 hover:text-white hover:bg-gray-700"
+          >
             <Settings className="w-4 h-4" />
           </Button>
         </div>
@@ -52,8 +56,6 @@ export function TopPanel(props: {
     </>
   );
 }
-
-
 
 export function LeftPanel() {
   // Import all needed state and props from the store
@@ -89,7 +91,11 @@ export function LeftPanel() {
               className="rounded-full w-12 h-12 p-0"
               onClick={() => setIsMuted && setIsMuted(!isMuted)}
             >
-              {isMuted ? <MicOff className="w-5 h-5" /> : <Mic className="w-5 h-5" />}
+              {isMuted ? (
+                <MicOff className="w-5 h-5" />
+              ) : (
+                <Mic className="w-5 h-5" />
+              )}
             </Button>
           </motion.div>
 
@@ -100,7 +106,11 @@ export function LeftPanel() {
               className="rounded-full w-12 h-12 p-0"
               onClick={() => setIsVideoOff && setIsVideoOff(!isVideoOff)}
             >
-              {isVideoOff ? <VideoOff className="w-5 h-5" /> : <Video className="w-5 h-5" />}
+              {isVideoOff ? (
+                <VideoOff className="w-5 h-5" />
+              ) : (
+                <Video className="w-5 h-5" />
+              )}
             </Button>
           </motion.div>
 
@@ -109,7 +119,9 @@ export function LeftPanel() {
               variant="destructive"
               size="lg"
               className="rounded-full w-12 h-12 p-0"
-              onClick={() => setIsInterviewActive && setIsInterviewActive(false)}
+              onClick={() =>
+                setIsInterviewActive && setIsInterviewActive(false)
+              }
             >
               <Phone className="w-5 h-5 rotate-[135deg]" />
             </Button>
@@ -118,7 +130,8 @@ export function LeftPanel() {
         {/* Show listening status and recognized text */}
         <div className="mt-4 text-center">
           <div className="text-xs text-gray-400">
-            Mic: {isMuted ? "Off" : "On"} | Listening: {listening ? "Yes" : "No"}
+            Mic: {isMuted ? "Off" : "On"} | Listening:{" "}
+            {listening ? "Yes" : "No"}
           </div>
           {/* <div className="text-xs text-green-400 break-words mt-1">
             {text && (
@@ -132,9 +145,6 @@ export function LeftPanel() {
     </div>
   );
 }
-
-
-
 
 type TestCase = {
   input: string;
@@ -162,22 +172,28 @@ export function RightPanel({ currentQ }: any) {
         <div className="bg-gray-800 border-b border-gray-700 p-4">
           <div className="flex items-center justify-between mb-3">
             <div className="flex items-center gap-3">
-              <h2 className="text-xl font-semibold text-white">{currentQ?.title}</h2>
+              <h2 className="text-xl font-semibold text-white">
+                {currentQ?.title}
+              </h2>
               <Badge
                 variant="secondary"
                 className={`${
                   currentQ?.difficulty === "Easy"
                     ? "bg-green-500/20 text-green-400"
                     : currentQ?.difficulty === "Medium"
-                    ? "bg-yellow-500/20 text-yellow-400"
-                    : "bg-red-500/20 text-red-400"
+                      ? "bg-yellow-500/20 text-yellow-400"
+                      : "bg-red-500/20 text-red-400"
                 }`}
               >
                 {currentQ?.difficulty}
               </Badge>
             </div>
             <div className="flex items-center gap-2">
-              <Button variant="outline" size="sm" className="border-gray-600 text-gray-300 bg-transparent">
+              <Button
+                variant="outline"
+                size="sm"
+                className="border-gray-600 text-gray-300 bg-transparent"
+              >
                 <RotateCcw className="w-4 h-4 mr-2" />
                 Reset
               </Button>
@@ -187,7 +203,9 @@ export function RightPanel({ currentQ }: any) {
               </Button>
             </div>
           </div>
-          <p className="text-gray-300 text-sm leading-relaxed">{currentQ?.description}</p>
+          <p className="text-gray-300 text-sm leading-relaxed">
+            {currentQ?.description}
+          </p>
         </div>
 
         {/* Code Editor */}
@@ -208,23 +226,22 @@ export function RightPanel({ currentQ }: any) {
                   <div key={index} className="bg-gray-700/50 rounded-lg p-3">
                     <div className="text-sm">
                       <div className="text-gray-300 mb-1">Input:</div>
-                      <code className="text-blue-400 text-xs">{testCase?.input}</code>
+                      <code className="text-blue-400 text-xs">
+                        {testCase?.input}
+                      </code>
                     </div>
                     <div className="text-sm mt-2">
                       <div className="text-gray-300 mb-1">Expected Output:</div>
-                      <code className="text-green-400 text-xs">{testCase?.output}</code>
+                      <code className="text-green-400 text-xs">
+                        {testCase?.output}
+                      </code>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* Console Output */}
-            <div className="flex-1 p-4">
-              <h4 className="font-medium text-white mb-3">Console</h4>
-              <div className="bg-gray-900 rounded-lg p-3 font-mono text-sm text-gray-300 min-h-[100px]">
-                <div className="text-green-400">Ready to run your code...</div>
-              </div>
+            <div>
+              <Output output={output} />
             </div>
           </div>
         </div>

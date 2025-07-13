@@ -1,64 +1,56 @@
-"use client"
+import { useRef, useState } from "react";
+import { Editor, OnMount } from "@monaco-editor/react";
+import LanguageSelector from "./LanguageSelector";
+import { BOILERPLATE, LANGUAGE_VERSIONS } from "../constants/languages";
 
-import type React from "react"
+const CodeEditor = ({
+  initialLanguage = "javascript",
+}: {
+  initialLanguage?: string;
+}) => {
+  const editorRef = useRef<unknown>(null);
+  const [value, setValue] = useState(LANGUAGE_VERSIONS[initialLanguage] || "");
+  const [language, setLanguage] = useState(initialLanguage);
 
-import { useState } from "react"
-import { motion } from "framer-motion"
+  const onMount: OnMount = (editor) => {
+    editorRef.current = editor;
+    editor.focus();
+  };
 
-interface CodeEditorProps {
-  initialCode: string
-}
-
-export default function CodeEditor({ initialCode }: CodeEditorProps) {
-  const [code, setCode] = useState(initialCode)
-  const [lineNumbers, setLineNumbers] = useState(
-    Array.from({ length: initialCode?.split("\n").length }, (_, i) => i + 1),
-  )
-
-  const handleCodeChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const newCode = e.target.value
-    setCode(newCode)
-
-    // Update line numbers
-    const lines = newCode.split("\n").length
-    setLineNumbers(Array.from({ length: lines }, (_, i) => i + 1))
-  }
+  const onSelect = (lang: string) => {
+    setLanguage(lang);
+    setValue(BOILERPLATE[lang] || "");
+  };
 
   return (
-    <div className="h-full bg-gray-900 flex">
-      {/* Line Numbers */}
-      <div className="bg-gray-800 px-3 py-4 text-gray-500 text-sm font-mono select-none border-r border-gray-700">
-        {lineNumbers.map((num) => (
-          <div key={num} className="leading-6 text-right">
-            {num}
-          </div>
-        ))}
+    <div className="bg-[#181f2a] rounded-xl shadow-lg p-0 max-w-3xl mx-auto border border-[#232c3b]">
+      <div className="flex items-center justify-between px-6 py-4 border-b border-[#232c3b]">
+        <LanguageSelector language={language} onSelect={onSelect} />
       </div>
-
-      {/* Code Area */}
-      <div className="flex-1 relative">
-        <textarea
-          value={code}
-          onChange={handleCodeChange}
-          className="w-full h-full bg-transparent text-gray-100 font-mono text-sm p-4 resize-none outline-none leading-6"
-          style={{
-            tabSize: 4,
-            fontFamily: 'Monaco, Menlo, "Ubuntu Mono", monospace',
+      <div className="rounded-b-xl overflow-hidden p-4">
+        <Editor
+          className="rounded-lg"
+          options={{
+            minimap: { enabled: false },
+            fontSize: 16,
+            fontFamily:
+              'Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+            scrollBeyondLastLine: false,
+            wordWrap: "on",
+            lineNumbers: "on",
+            automaticLayout: true,
+            theme: "vs-dark",
           }}
-          spellCheck={false}
+          height="350px"
+          theme="vs-dark"
+          language={language}
+          value={value}
+          onMount={onMount}
+          onChange={(val) => setValue(val || "")}
         />
-
-        {/* Syntax highlighting overlay would go here in a real implementation */}
-        <div className="absolute top-4 right-4">
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="bg-gray-800 rounded-lg px-3 py-1 text-xs text-gray-400"
-          >
-            JavaScript
-          </motion.div>
-        </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default CodeEditor;
