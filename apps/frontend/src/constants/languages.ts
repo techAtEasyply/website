@@ -4,7 +4,7 @@ export const LANGUAGE_VERSIONS = {
   java: "15.0.2",
   csharp: "6.12.0",
   php: "8.2.3",
-  cplusplus: "11.2.0",
+  cpp: "11.2.0",
 };
 
 export const BOILERPLATE = {
@@ -79,7 +79,7 @@ $target = intval(trim(fgets(STDIN)));
 echo implode(' ', $nums) . ' ' . $target . PHP_EOL;
 `,
   },
-  cplusplus: {
+  cpp: {
     input: `
 #include <iostream>
 #include <sstream>

@@ -10,6 +10,7 @@ import VideoCall from "@/components/video-call";
 import CodeEditor from "@/components/code-editor";
 import Output from "@/components/Output"; //!TODO
 import { runCode } from "../apis/apis";
+import { BOILERPLATE } from "../constants/languages";
 
 export function TopPanel(props: {
   timeElapsed: number;
@@ -248,7 +249,14 @@ export function RightPanel({ currentQ }: { currentQ: Question }) {
               value={code}
               language={language}
               onChange={setCode}
-              onLanguageChange={setLanguage}
+              onLanguageChange={(lang) => {
+                setLanguage(lang);
+                if (BOILERPLATE[lang]) {
+                  setCode((BOILERPLATE[lang].input || "") + (BOILERPLATE[lang].output || ""));
+                } else {
+                  setCode("");
+                }
+              }}
             />
           </div>
 
