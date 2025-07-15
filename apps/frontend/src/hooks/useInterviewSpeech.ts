@@ -77,11 +77,13 @@ export function useInterviewSpeech({
             nextQ = nextPhaseQuestions[0];
           }
 
+          console.log('sending ans for evaluation....')
           evaluateAnswer(
             getQuestionText(currentQ),
             finalTranscript,
             nextQ ? getQuestionText(nextQ) : null
           );
+
 
           setCurrentQuestion(nextQuestion);
           setPhase(nextPhase);
