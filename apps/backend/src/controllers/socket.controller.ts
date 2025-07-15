@@ -14,7 +14,7 @@ export async function introduction(this: Socket, payload: any) {
   const final = jsonparse(response);
   let audioStream;
   try {
-    audioStream = await generateAudioFromText("hi daddy" );
+    audioStream = await generateAudioFromText(final.response);
     // streamToBuffer returns a Promise, so we need to await it
     //@ts-ignore
     const audioBuffer = await webReadableStreamToBuffer(audioStream);
@@ -39,7 +39,7 @@ export async function evaluateAns(this: Socket, payload: any){
   console.log('this is the gemini response ->', final.response);
   let audioStream;
   try {
-    audioStream = await generateAudioFromText("hi daddy");
+    audioStream = await generateAudioFromText(final.response);
     // streamToBuffer returns a Promise, so we need to await it
     //@ts-ignore
     const audioBuffer = await webReadableStreamToBuffer(audioStream);
