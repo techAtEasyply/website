@@ -9,70 +9,54 @@ datasource db {
 }
 
 model User {
-  id             String   @id @default(uuid())
-  email          String   @unique
-  name           String
-  password       String
-  subscription   SubscriptionType @default(FREE)
-  resumes        Resume[]
-  interviews     Interview[]
-  createdAt      DateTime @default(now())
+  id               String           @id @default(uuid())
+  email            String           @unique
+  profilePicUrl    String?
+  resume           Resume?          @relation(fields: [resumeId], references: [id])
+  resumeId         String?          @unique
+  tokens           Int              @default(4000)
+  savedJobs        SavedJob[]
+  interviewReports InterviewReport[]
+  setting          Setting?         @relation(fields: [settingId], references: [id])
+  settingId        String?          @unique
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
 }
 
 model Resume {
-  id               String   @id @default(uuid())
-  user             User     @relation(fields: [userId], references: [id])
-  userId           String
-  title            String
-  content          Json     // Raw or parsed resume data
-  atsScore         Int
-  potentialScore   Int
-  isPaidOptimized  Boolean  @default(false)
-  createdAt        DateTime @default(now())
+  id         String   @id @default(uuid())
+  themeName  String
+  data       Json
+  user       User?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  resumeUrl  String // todo implement s3 signed url @surya
 }
 
-model Interview {
-  id              String   @id @default(uuid())
-  user            User     @relation(fields: [userId], references: [id])
-  userId          String
-  type            InterviewType // DSA, DEV, HR, DBMS, etc.
-  difficulty      Difficulty
-  transcript      Json     // Q&A and evaluations
-  feedback        String?
-  strengths       String?
-  weaknesses      String?
-  score           Int?
-  createdAt       DateTime @default(now())
+model SavedJob {
+  id        String   @id @default(uuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  jobId     String
+  jobTitle  String
+  company   String
+  savedAt   DateTime @default(now())
 }
 
-model JobListing {
+model InterviewReport {
+  id        String   @id @default(uuid())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  feedback  Json?
+  rating    Int?
+  createdAt DateTime @default(now())
+}
+
+model Setting {
   id          String   @id @default(uuid())
-  title       String
-  company     String
-  location    String?
-  source      String   // LinkedIn, Twitter, etc.
-  url         String
-  tags        String[]
-  scrapedAt   DateTime @default(now())
-}
-
-
-
-enum SubscriptionType {
-  FREE
-  PREMIUM
-}
-
-enum InterviewType {
-  DSA
-  CS_FUNDAMENTALS
-  DEVELOPMENT
-  HR
-  CUSTOM
-}
-
-enum Difficulty {
-  EASY
-  MEDIUM
-  HARD
+  user        User?
+  darkMode    Boolean  @default(false)
+  notificationsEnabled Boolean @default(true)
+  language    String   @default("en")
+  updatedAt   DateTime @updatedAt
 }
