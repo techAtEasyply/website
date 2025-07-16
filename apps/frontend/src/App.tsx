@@ -6,6 +6,7 @@ import Dashboard from "./pages/dashboard";
 import Settings from "./pages/settings";
 import PrintResumePage from "./pages/print-resume";
 import ResumePreviewPage from "./pages/preview-resume";
+import Landing from './pages/Landing';
 import {
   BrowserRouter,
   Routes,
@@ -59,6 +60,8 @@ function App() {
           <Route path="*" element={<ProtectedRoutes />} />
         </Route>
         <Route path="/interview" element={<Interview />} />
+        <Route path="/landing" element={<Landing />} />
+
         <Route path="/startInterview" element={<StartInterview />} />
       </Routes>
     </BrowserRouter>
