@@ -24,9 +24,7 @@ app.use("/api/ats", atsRouter);
 
 // Protect all routes with ClerkExpressRequireAuth and redirect to frontend sign-in
 //@ts-ignore
-app.use(
-  ClerkExpressRequireAuth({ signInUrl: "http://localhost:5173/sign-in" })
-);
+app.use(ClerkExpressRequireAuth());
 
 app.get("/", (req, res) => {
   res.send("Hello World");

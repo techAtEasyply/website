@@ -1,5 +1,6 @@
 import fs from "fs";
 import { Request, Response } from "express";
+// Multer types are now globally available via src/types/express/index.d.ts
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from "dotenv";
 dotenv.config();
@@ -38,6 +39,9 @@ export const analyzeResume = async (
     resumePath = req.file.path;
     const jobDescription: string = req.body.jobDescription;
     const promptType: string = req.body.promptType || "detailed";
+    if (!resumePath) {
+      throw new Error("Resume path is missing");
+    }
     const pdfBase64: string = fileToBase64(resumePath);
     const detailedPrompt = `
 You are an expert Technical Human Resource Manager. Carefully review the provided resume and compare it to the job description below.
