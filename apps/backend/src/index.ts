@@ -31,7 +31,7 @@ app.use("/api/invite", inviteRouter);
 app.use(ClerkExpressRequireAuth());
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("server is up!");
 });
 
 //@ts-ignore
