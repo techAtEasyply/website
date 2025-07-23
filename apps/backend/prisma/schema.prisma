@@ -60,3 +60,32 @@ model Setting {
   language    String   @default("en")
   updatedAt   DateTime @updatedAt
 }
+
+
+
+enum SubscriptionType {
+  FREE
+  PREMIUM
+}
+
+enum InterviewType {
+  DSA
+  CS_FUNDAMENTALS
+  DEVELOPMENT
+  HR
+  CUSTOM
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+model Invite{
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+  token     String   @unique
+  used     Boolean  @default(false) 
+}
