@@ -76,3 +76,11 @@ enum Difficulty {
   MEDIUM
   HARD
 }
+
+model Invite{
+  id        String   @id @default(uuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+  token     String   @unique
+  used     Boolean  @default(false) 
+}

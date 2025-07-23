@@ -3,13 +3,17 @@ import cors from "cors";
 import jobsRouter from "./routes/jobs.route";
 import interviewRouter from "./routes/interview.route";
 import atsRouter from "./routes/ats.routes";
+import inviteRouter from "./routes/invite.routes";
 import dotenv from "dotenv";
 import { app, server } from "./lib/socket";
 import { ClerkExpressRequireAuth, clerkClient } from "@clerk/clerk-sdk-node";
-
+import helmet from "helmet";
+import morgan from "morgan";
 dotenv.config();
 
 const port = process.env.PORT || 3000;
+app.use(helmet());
+app.use(morgan("dev"));
 
 app.use(express.json());
 app.use(
@@ -17,10 +21,10 @@ app.use(
     origin: "http://localhost:5173",
   })
 );
-
 app.use("/api/jobs", jobsRouter);
 app.use("/api/interview", interviewRouter);
 app.use("/api/ats", atsRouter);
+app.use("/api/invite", inviteRouter);
 
 // Protect all routes with ClerkExpressRequireAuth and redirect to frontend sign-in
 //@ts-ignore

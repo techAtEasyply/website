@@ -3,6 +3,25 @@ import UserRepository from "../repositories/user-repositories";
 
 const prisma = new PrismaClient();
 const userRepository = new UserRepository(prisma.user);
+export async function findOrCreateUser(userData: {
+  id: string;
+  email: string;
+  name?: string;
+  subscription?: string;
+}) {
+  try {
+    let user = await userRepository.findById(userData.id);
+    if (!user && userData.email) {
+      user = await userRepository.findByEmail(userData.email);
+    }
+    if (!user) {
+      user = await userRepository.create(userData);
+    }
+    return user;
+  } catch (error: any) {
+    throw new Error(`Error finding or creating user: ${error.message}`);
+  }
+}
 
 export async function getAllUsers() {
   try {

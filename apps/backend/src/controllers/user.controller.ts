@@ -15,14 +15,20 @@ declare global {
 
 export const getUserFromClerk = async (req: Request, res: Response) => {
   try {
+    console.log(req.auth);
     const userId = req.auth?.userId;
-    if (!userId) {
+    const email = req.auth?.email;
+    const name = req.auth?.name;
+    if (!userId || !email) {
       return res.status(401).json({ error: "Unauthorized" });
     }
-    const user = await userService.getUserById(userId);
-    if (!user) {
-      return res.status(404).json({ error: "User not found" });
-    }
+    // Find or create user in DB
+    const user = await userService.findOrCreateUser({
+      id: userId,
+      email,
+      name,
+      subscription: "free", // or set default
+    });
     res.status(200).json(user);
   } catch (error) {
     res.status(401).json({ error: "Unauthorized" });
