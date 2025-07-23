@@ -5,13 +5,15 @@ import {
   MinimalistTemplate,
   ElegantTemplate,
   CreativeTemplate,
-} from "./templates";
+  ArjunTemplate,
+} from "../templates";
 
 const TEMPLATES = [
   { label: "Modern", component: ModernTemplate },
   { label: "Minimalist", component: MinimalistTemplate },
   { label: "Elegant", component: ElegantTemplate },
   { label: "Creative", component: CreativeTemplate },
+  { label: "Arjun's Template", component: ArjunTemplate },
 ];
 
 export default function PrintResumePage() {
