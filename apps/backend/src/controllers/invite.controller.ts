@@ -1,4 +1,5 @@
 import { PrismaClient } from "@prisma/client";
+// import { error } from "console";
 import { configDotenv } from "dotenv";
 import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
@@ -38,7 +39,7 @@ export const createInvite = async (
         process.env.JWT_SECRET,
         { expiresIn: "24h" }
       );
-      const verificationLink = `http://localhost:3000/api/invite/verify?token=${token}`;
+      const verificationLink = `https://waitlist.easply.in/verify?token=${token}`;
 
       // Create invite in database first
       const invite = await prisma.invite.create({
@@ -58,29 +59,48 @@ export const createInvite = async (
       const mailOptions = {
         from: `"Easyply" <${process.env.EMAIL_USER}>`,
         to: email,
-        subject: `Waitlist Registration - Verify Your Email`,
+        subject: `Welcome to Easyply - Verify Your Email`,
         html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
-            <h2 style="color: #333;">Welcome to Easyply Waitlist!</h2>
-            <p>Hi there,</p>
-            <p>Thank you for joining our waitlist. Please verify your email to secure your spot for early access.</p>
+          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 500px; margin: 0 auto; background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden;">
             
-            <div style="text-align: center; margin: 30px 0;">
+            <!-- Header -->
+            <div style="background: linear-gradient(135deg, #667eea, #764ba2); padding: 40px 30px; text-align: center;">
+              <h1 style="color: white; margin: 0; font-size: 24px; font-weight: 600;">Welcome to Easyply!</h1>
+              <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0; font-size: 16px;">Verify your email to get started</p>
+            </div>
+
+            <!-- Content -->
+            <div style="padding: 40px 30px; text-align: center;">
+              <p style="color: #666; font-size: 16px; line-height: 1.6; margin: 0 0 30px;">
+                Thank you for joining our waitlist! Click the button below to verify your email address.
+              </p>
+              
+              <!-- Verify Button -->
               <a href="${verificationLink}" 
-                 style="background: #007bff; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; display: inline-block;">
+                 style="background: linear-gradient(135deg, #667eea, #764ba2); 
+                    color: white; 
+                    padding: 14px 28px; 
+                    text-decoration: none; 
+                    border-radius: 8px; 
+                    display: inline-block; 
+                    font-weight: 600; 
+                    font-size: 16px;
+                    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">
                 Verify Email Address
               </a>
+
+              <!-- Expiry Notice -->
+              <p style="color: #999; font-size: 14px; margin: 30px 0 0;">
+                This link expires in 24 hours
+              </p>
             </div>
-            
-            <p>Or copy and paste this link in your browser:</p>
-            <p style="word-break: break-all; color: #666;">${verificationLink}</p>
-            
-            <p><strong>This link expires in 24 hours.</strong></p>
-            
-            <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
-            <p style="color: #666; font-size: 12px;">
-              If you didn't request this, please ignore this email.
-            </p>
+
+            <!-- Footer -->
+            <div style="background: #f8f9fa; padding: 20px; text-align: center; border-top: 1px solid #eee;">
+              <p style="color: #999; font-size: 12px; margin: 0;">
+                If you didn't request this, you can safely ignore this email.
+              </p>
+            </div>
           </div>
         `,
       };
@@ -137,128 +157,47 @@ export const verifyInvite = async (
   req: Request,
   res: Response
 ): Promise<void> => {
+  const { token } = req.query;
   try {
-    const { token } = req.query;
     if (!token || typeof token !== "string") {
-      res.status(400).send(`
-        <html>
-          <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-            <h1 style="color: red;">❌ Invalid Verification Link</h1>
-            <p>The verification link is invalid or malformed.</p>
-          </body>
-        </html>
-      `);
+      res.status(400).json({ error: "Token is required", type: "failure" });
       return;
     }
-
-    if (!process.env.JWT_SECRET) {
-      res.status(500).send(`
-        <html>
-          <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-            <h1 style="color: red;">❌ Server Error</h1>
-            <p>Server configuration error. Please try again later.</p>
-          </body>
-        </html>
-      `);
+    const decode = jwt.verify(token, process.env.JWT_SECRET!);
+    console.log("Decoded invite token:", decode);
+    if (!decode) {
+      res.status(400).json({ error: "Invalid token", type: "failure" });
       return;
     }
+    // @ts-expect-error
+    const email = decode.email as string;
 
-    // Verify JWT token
-    let decoded: any;
-    try {
-      decoded = jwt.verify(token, process.env.JWT_SECRET);
-    } catch (err: any) {
-      if (err.name === "TokenExpiredError") {
-        res.status(400).send(`
-          <html>
-            <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-              <h1 style="color: orange;">⏰ Link Expired</h1>
-              <p>Your verification link has expired. Please request a new one.</p>
-            </body>
-          </html>
-        `);
-        return;
-      }
-      res.status(400).send(`
-        <html>
-          <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-            <h1 style="color: red;">❌ Invalid Link</h1>
-            <p>The verification link is invalid.</p>
-          </body>
-        </html>
-      `);
-      return;
-    }
-
-    const email = decoded.email;
-    if (!email) {
-      res.status(400).send(`
-        <html>
-          <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-            <h1 style="color: red;">❌ Invalid Link</h1>
-            <p>The verification link is invalid.</p>
-          </body>
-        </html>
-      `);
-      return;
-    }
-
-    // Find the invite
-    const invite = await prisma.invite.findFirst({
-      where: { email, token, used: false },
+    const user = await prisma.invite.findUnique({
+      where: { email, used: true },
     });
 
-    if (!invite) {
-      res.status(400).send(`
-        <html>
-          <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-            <h1 style="color: orange;">⚠️ Already Verified</h1>
-            <p>This email has already been verified or the link is invalid.</p>
-          </body>
-        </html>
-      `);
+    if (user) {
+      res.status(400).json({ error: "user already verified" ,type:"exists"});
       return;
     }
 
-    // Mark as verified
-    await prisma.invite.update({
-      where: { id: invite.id },
+    const invite = await prisma.invite.update({
+      where: { email, used: false },
       data: { used: true },
     });
 
-    res.status(200).send(`
-      <html>
-        <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-          <h1 style="color: green;">🎉 Success!</h1>
-          <h2>Email Verified Successfully</h2>
-          <p><strong>${email}</strong> is now on our early access waitlist!</p>
-          <p>We'll notify you when early access becomes available.</p>
-        </body>
-      </html>
-    `);
-  } catch (error) {
-    console.error("Verify invite error:", error);
-    res.status(500).send(`
-      <html>
-        <body style="font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-          <h1 style="color: red;">❌ Verification Failed</h1>
-          <p>An error occurred during verification. Please try again.</p>
-        </body>
-      </html>
-    `);
+
+    res.status(200).json({
+      success: true,
+      message: "Invite verified successfully",
+      invite: { id: invite.id, email: invite.email },
+      type: "success"
+    });
+  } catch (err: any) {
+    console.error("Error verifying invite:", err);
+    res
+      .status(403)
+      .json({ error: "Failed to verify invite", message: err.message,   type: "failure" });
+    return;
   }
 };
-
-// export const getWaitlist = async (req: Request, res: Response): Promise<void> => {
-//   try {
-//     const waitlist = await prisma.invite.findMany({
-//       select: { id: true, email: true, used: true, createdAt: true },
-//       orderBy: { createdAt: "desc" },
-//     });
-
-//     res.status(200).json({ success: true, waitlist });
-//   } catch (error) {
-//     console.error("Get waitlist error:", error);
-//     res.status(500).json({ error: "Failed to fetch waitlist" });
-//   }
-// };
