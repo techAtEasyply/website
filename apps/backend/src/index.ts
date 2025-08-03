@@ -18,7 +18,7 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.FRONTEND_URL || "http://localhost:5173",
   })
 );
 app.use("/api/jobs", jobsRouter);
@@ -62,5 +62,7 @@ app.get("/api/userinfo", async (req, res) => {
 });
 
 server.listen(port, () => {
-  console.log(`server running on http://localhost:${port}`);
+  console.log(
+    `server running on ${process.env.BACKEND_URL || `http://localhost:${port}`}`
+  );
 });
