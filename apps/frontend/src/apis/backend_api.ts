@@ -7,8 +7,18 @@ export const backend = axios.create({
   baseURL: BACKEND_URL,
 });
 
+export const Waitlist = {
+  // Join waitlist
+  join: (email: string) => backend.post("/invite/waitlist", { email }),
+  
+  // Verify email token
+  verify: (token: string) => backend.get(`/invite/verify?token=${token}`),
+  
+  // Get waitlist (admin)
+  getAll: () => backend.get("/invite/waitlist"),
+};
 
-export const Invite = {
-  sendInvite: (email) => backend.post("/invite", { email }),
-  verifyInvite: (token) => backend.get(`/invite/verify`, { params: { token } }),
+export const User = {
+  getUserInfo: () => backend.get("/user/me"),
+  getAllUsers: () => backend.get("/user"),
 };
