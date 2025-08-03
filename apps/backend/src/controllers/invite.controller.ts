@@ -5,6 +5,7 @@ import { Request, Response } from "express";
 import jwt from "jsonwebtoken";
 const nodemailer = require("nodemailer");
 configDotenv();
+
 const prisma = new PrismaClient();
 
 export const createInvite = async (
@@ -12,7 +13,7 @@ export const createInvite = async (
   res: Response
 ): Promise<void> => {
   try {
-    const { email } = req.body;
+    const { email } = req.params;
     if (!email) {
       res.status(400).json({ success: false, message: "Email is required" });
       return;
@@ -39,7 +40,7 @@ export const createInvite = async (
         process.env.JWT_SECRET,
         { expiresIn: "24h" }
       );
-      const verificationLink = `https://waitlist.easply.in/verify?token=${token}`;
+      const verificationLink = `${process.env.FRONTEND_URL}/verify?token=${token}`;
 
       // Create invite in database first
       const invite = await prisma.invite.create({
@@ -177,7 +178,7 @@ export const verifyInvite = async (
     });
 
     if (user) {
-      res.status(400).json({ error: "user already verified" ,type:"exists"});
+      res.status(400).json({ error: "user already verified", type: "exists" });
       return;
     }
 
@@ -186,18 +187,21 @@ export const verifyInvite = async (
       data: { used: true },
     });
 
-
     res.status(200).json({
       success: true,
       message: "Invite verified successfully",
       invite: { id: invite.id, email: invite.email },
-      type: "success"
+      type: "success",
     });
   } catch (err: any) {
     console.error("Error verifying invite:", err);
     res
       .status(403)
-      .json({ error: "Failed to verify invite", message: err.message,   type: "failure" });
+      .json({
+        error: "Failed to verify invite",
+        message: err.message,
+        type: "failure",
+      });
     return;
   }
 };
