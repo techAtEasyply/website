@@ -1,11 +1,11 @@
 import { Router } from "express";
-import {
-  getUserFromClerk,
-  createUser,
-  updateUser,
-  deleteUser,
-  getAllUsers,
-} from "../controllers/user.controller";
+// import {
+//   getUserFromClerk,
+//   createUser,
+//   updateUser,
+//   deleteUser,
+//   getAllUsers,
+// } from "../controllers/user.controller";
 
 const router = Router();
 // @ts-ignore
