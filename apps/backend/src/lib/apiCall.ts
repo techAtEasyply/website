@@ -1,4 +1,25 @@
 import axios from "axios";
+
+const OLLAMA_URL = process.env.OLLAMA_URL || "http://localhost:11434/api/generate";
+const OLLAMA_MODEL = process.env.OLLAMA_MODEL || "qwen2.5:7b";
+
+export async function callOllamaApi(prompt: string) {
+  try {
+    const response = await axios.post(OLLAMA_URL, {
+      prompt,
+      model: OLLAMA_MODEL,
+      format: "json",
+      stream: false,
+      options: { temperature: 0.3 },
+    });
+    return response.data?.response;
+  } catch (error: any) {
+    throw new Error(
+      error?.response?.data?.error || error.message || "Error communicating with Ollama"
+    );
+  }
+}
+
 export async function callOpenAIApi(prompt: string) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {

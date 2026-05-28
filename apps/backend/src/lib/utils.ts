@@ -2,7 +2,6 @@
 import axios from 'axios';
 
 import dotenv from 'dotenv';
-import { ElevenLabsClient, play } from "elevenlabs";
 import { Buffer } from 'buffer';
 export function generatePrompt(question : string, answer : string, followUpQuestion : string) {
   return `
@@ -89,28 +88,22 @@ Here’s the question you’ll be asking:
 
 dotenv.config();
 
-export async function generateAudioFromText(text: string) {
+const TTS_API_URL =
+  process.env.TTS_API_URL || "https://priyanshu1976--ai-mock-tts-synthesize.modal.run";
 
-  console.log(process.env.ELEVEN_LABS_API_KEY)
-  const client = new ElevenLabsClient({ apiKey: process.env.ELEVEN_LABS_API_KEY });
+export async function generateAudioFromText(text: string): Promise<Buffer> {
   try {
-
-    if (!process.env.VOICE_ID) {
-      console.log("voice id not defined")
-      return
-    }
-    const audioStream = await client.textToSpeech.convert(process.env.VOICE_ID, {
-      text,
-      model_id: "eleven_multilingual_v2",
-      output_format: "mp3_44100_128"
-    });
-    console.log("Audio stream received.");
-    return audioStream
-  } catch (error : any) {
+    const response = await axios.post(
+      TTS_API_URL,
+      { text },
+      { responseType: "arraybuffer" }
+    );
+    console.log("Audio received from TTS service.");
+    return Buffer.from(response.data);
+  } catch (error: any) {
     console.error('Error generating audio:', error.message);
     throw new Error('Audio generation failed');
   }
-
 }
 
 
@@ -134,20 +127,6 @@ export function jsonparse(data : string) {
     }
 
   return questionJson
-}
-
-
-export async function webReadableStreamToBuffer(stream: ReadableStream): Promise<Buffer> {
-  const reader = stream.getReader();
-  const chunks = [];
-
-  while (true) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    chunks.push(value);
-  }
-
-  return Buffer.concat(chunks);
 }
 
 

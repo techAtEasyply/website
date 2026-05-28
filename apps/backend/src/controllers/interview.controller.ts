@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import axios from "axios";
-import { callGeminiApi } from '../lib/apiCall';
+import { callOllamaApi } from '../lib/apiCall';
 import { techPrompt } from '../lib/genericPrompt';
 import { generateInterviewPrompt } from '../lib/genericPrompt';
 import {jsonparse} from '../lib/utils'
@@ -13,7 +13,7 @@ export const evaluate = async (req: Request, res: Response) => {
   if (!prompt) {
     return res.status(400).json({ message: "Prompt is required" });
   }
-  const data = await callGeminiApi(prompt)
+  const data = await callOllamaApi(prompt)
   res.status(200).json({response : data});
 }
 
@@ -26,7 +26,7 @@ export const techInterview = async (req: Request, res: Response) => {
   const prompt = generateInterviewPrompt(feild, difficulty);
 
   try {
-    const response = await callGeminiApi(prompt);
+    const response = await callOllamaApi(prompt);
 
     // Try to extract JSON from markdown code block if present
     const questionJson = jsonparse(response)
